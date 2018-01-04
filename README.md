@@ -23,13 +23,10 @@
 以下排名不分先后：
 
 [享耳先森](https://github.com/iblacksun)  
-[PrideChung](https://github.com/PrideChung)  
 [mmoaay](https://github.com/mmoaay)  
 [没故事的卓同学](https://github.com/lacklock)  
-[joy0304](https://github.com/joy0304)  
 [EyreFree](https://github.com/EyreFree)  
 [四娘](https://github.com/kemchenj)  
-[knightsj](https://github.com/knightsj)  
 
 ## 协议
 
