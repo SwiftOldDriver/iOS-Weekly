@@ -1,4 +1,4 @@
-# 老司机 iOS 周报
+![](/assets/ios-weekly.png)
 
 [![](https://img.shields.io/badge/made%20with-%3C3-orange.svg)](https://raw.githubusercontent.com/EyreFree/EFQRCode/assets/icon/MadeWith%3C3.png)
 
