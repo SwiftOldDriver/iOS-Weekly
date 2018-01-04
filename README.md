@@ -1,5 +1,7 @@
 # 老司机 iOS 周报
 
+[![](https://img.shields.io/badge/made%20with-%3C3-orange.svg)](https://raw.githubusercontent.com/EyreFree/EFQRCode/assets/icon/MadeWith%3C3.png)
+
 ## 宗旨
 
 > 筛选有价值的信息
@@ -14,7 +16,20 @@
 
 ## 归档
 
-[老司机 iOS 周报 #1](/Reports/#1.md)
+[老司机 iOS 周报 #1](/Reports/%231.md)
+
+## 编辑
+
+以下排名不分先后：
+
+[享耳先森](https://github.com/iblacksun)  
+[PrideChung](https://github.com/PrideChung)  
+[mmoaay](https://github.com/mmoaay)  
+[没故事的卓同学](https://github.com/lacklock)  
+[joy0304](https://github.com/joy0304)  
+[EyreFree](https://github.com/EyreFree)  
+[四娘](https://github.com/kemchenj)  
+[knightsj](https://github.com/knightsj)  
 
 ## 协议
 
@@ -22,8 +37,6 @@
 
 iOS-Weekly 基于 Apache-2.0 协议进行分发和使用，更多信息参见协议文件。
 
-<a target='_blank' href='#'>
-    <img src='https://raw.githubusercontent.com/EyreFree/EFArticles/master/res/cc-by-nc-nd.png' width='145.77' height='51'/>
-</a>
+<img src='https://raw.githubusercontent.com/EyreFree/EFArticles/master/res/cc-by-nc-nd.png' width='145.77' height='51'/>
 
 iOS-Weekly 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
