@@ -33,6 +33,8 @@
 
 ## 本期编辑
 
+[@没故事的卓同学](https://weibo.com/1926303682/profile)，[@四娘](https://kemchenj.github.io)，[@mmoaay](https://weibo.com/u/1302422271)，[@享耳先森](https://github.com/iblacksun)，[@EyreFree](https://weibo.com/eyrefree777)
+
 ## 微信打赏
 
 感谢您的支持。
