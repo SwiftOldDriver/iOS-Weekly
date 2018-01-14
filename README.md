@@ -27,6 +27,7 @@
 [没故事的卓同学](https://github.com/lacklock)  
 [EyreFree](https://github.com/EyreFree)  
 [四娘](https://github.com/kemchenj)  
+[@Damonwong](https://weibo.com/damonone)
 
 ## 协议
 
@@ -37,3 +38,5 @@ iOS-Weekly 基于 Apache-2.0 协议进行分发和使用，更多信息参见协
 <img src='https://raw.githubusercontent.com/EyreFree/EFArticles/master/res/cc-by-nc-nd.png' width='145.77' height='51'/>
 
 iOS-Weekly 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
+
+
