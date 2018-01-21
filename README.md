@@ -40,3 +40,6 @@ iOS-Weekly 基于 Apache-2.0 协议进行分发和使用，更多信息参见协
 iOS-Weekly 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
 
 
+
+最终还是这个结果。很想骂人，但是想了想，可能最难受的还是你自己。
+
