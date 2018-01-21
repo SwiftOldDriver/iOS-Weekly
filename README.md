@@ -1,7 +1,5 @@
 ![](/assets/ios-weekly.png)
 
-[![](https://img.shields.io/badge/made%20with-%3C3-orange.svg)](https://raw.githubusercontent.com/EyreFree/EFQRCode/assets/icon/MadeWith%3C3.png)
-
 ## 宗旨
 
 > 筛选有价值的信息
