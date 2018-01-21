@@ -1,6 +1,5 @@
 ![](/assets/ios-weekly.png)
 
-## 宗旨
 
 > 筛选有价值的信息
 
