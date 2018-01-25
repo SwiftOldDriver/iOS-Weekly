@@ -10,9 +10,9 @@
 
 [周报列表](https://github.com/SwiftOldDriver/iOS-Weekly/tree/master/Reports)
 
-## 发布
+## 其他平台
 
-掘金：[老司机iOS周报](https://juejin.im/user/5a52075e6fb9a01c9d31b107/posts)
+掘金：[老司机 iOS 周报](https://juejin.im/user/5a52075e6fb9a01c9d31b107/posts)
 
 ## 编辑
 
