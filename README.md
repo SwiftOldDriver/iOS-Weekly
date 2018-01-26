@@ -16,18 +16,66 @@
 
 ## 编辑
 
-发起人：
-
-[没故事的卓同学](https://github.com/lacklock)
-
-参与者（以下排名不分先后）：
-
-[享耳先森](https://github.com/iblacksun)  
-[mmoaay](https://github.com/mmoaay)  
-[EyreFree](https://github.com/EyreFree)  
-[四娘](https://github.com/kemchenj)  
-[Damonwong](https://weibo.com/damonone)  
-[折腾范儿_味精](https://github.com/awhisper)
+<table id='team'>
+	<tr>
+		<td id='lacklock'>
+			<a href='https://github.com/lacklock'>
+				<img src='https://github.com/lacklock.png?size=460'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/u/1926303682'>没故事的卓同学</a></h4>
+		</td>
+		<td id='iblacksun'>
+			<a href='https://github.com/iblacksun'>
+				<img src='https://github.com/iblacksun.png?size=460'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/iblacksun'>享耳先森</a></h4>
+		</td>
+		<td id='mmoaay'>
+			<a href='https://github.com/mmoaay'>
+				<img src='https://github.com/mmoaay.png?size=460'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/smmoaay'>mmoaay</a></h4>
+		</td>
+		<td id='EyreFree'>
+			<a href='https://github.com/EyreFree'>
+				<img src='https://github.com/EyreFree.png?size=460'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/eyrefree777'>EyreFree</a></h4>
+		</td>
+		<td id='kemchenj'>
+			<a href='https://github.com/kemchenj'>
+				<img src='https://github.com/kemchenj.png?size=460'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/kemchenj'>四娘</a></h4>
+		</td>
+	</tr>
+	<tr>
+		<td id='Damonvvong'>
+			<a href='https://github.com/Damonvvong'>
+				<img src='https://github.com/Damonvvong.png?size=460'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/damonone'>Damonwong</a></h4>
+		</td>
+		<td id='awhisper'>
+			<a href='https://github.com/awhisper'>
+				<img src='https://github.com/awhisper.png?size=460'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/agvicking'>折腾范儿_味精</a></h4>
+		</td>
+		<td id='josephchang10'>
+			<a href='https://github.com/josephchang10'>
+				<img src='https://github.com/josephchang10.png?size=460'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/u/2949394297'>张嘉夫</a></h4>
+		</td>
+		<td id='raozhizhen'>
+			<a href='https://github.com/raozhizhen'>
+				<img src='https://github.com/raozhizhen.png?size=460'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/AidenRao'>AidenRao</a></h4>
+		</td>
+	</tr>
+</table>
 
 ## 其他
 
