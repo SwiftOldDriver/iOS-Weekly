@@ -1,5 +1,6 @@
 # 老司机 iOS 周报 #1
 
+![ios-weekly](../assets/ios-weekly.png)
 老司机 iOS 周报，只为你呈现有价值的信息。
 
 ## 新闻
