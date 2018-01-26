@@ -20,31 +20,31 @@
 	<tr>
 		<td id='lacklock'>
 			<a href='https://github.com/lacklock'>
-				<img src='https://github.com/lacklock.png?size=140'>
+				<img src='https://github.com/lacklock.png?size=274'>
 			</a>
 			<h4 align='center'><a href='https://weibo.com/u/1926303682'>没故事的卓同学</a></h4>
 		</td>
 		<td id='iblacksun'>
 			<a href='https://github.com/iblacksun'>
-				<img src='https://github.com/iblacksun.png?size=140'>
+				<img src='https://github.com/iblacksun.png?size=274'>
 			</a>
 			<h4 align='center'><a href='https://weibo.com/iblacksun'>享耳先森</a></h4>
 		</td>
 		<td id='mmoaay'>
 			<a href='https://github.com/mmoaay'>
-				<img src='https://github.com/mmoaay.png?size=140'>
+				<img src='https://github.com/mmoaay.png?size=274'>
 			</a>
 			<h4 align='center'><a href='https://weibo.com/smmoaay'>mmoaay</a></h4>
 		</td>
 		<td id='EyreFree'>
 			<a href='https://github.com/EyreFree'>
-				<img src='https://github.com/EyreFree.png?size=140'>
+				<img src='https://github.com/EyreFree.png?size=274'>
 			</a>
 			<h4 align='center'><a href='https://weibo.com/eyrefree777'>EyreFree</a></h4>
 		</td>
 		<td id='kemchenj'>
 			<a href='https://github.com/kemchenj'>
-				<img src='https://github.com/kemchenj.png?size=140'>
+				<img src='https://github.com/kemchenj.png?size=274'>
 			</a>
 			<h4 align='center'><a href='https://weibo.com/kemchenj'>四娘</a></h4>
 		</td>
@@ -52,25 +52,25 @@
 	<tr>
 		<td id='Damonvvong'>
 			<a href='https://github.com/Damonvvong'>
-				<img src='https://github.com/Damonvvong.png?size=140'>
+				<img src='https://github.com/Damonvvong.png?size=274'>
 			</a>
 			<h4 align='center'><a href='https://weibo.com/damonone'>Damonwong</a></h4>
 		</td>
 		<td id='awhisper'>
 			<a href='https://github.com/awhisper'>
-				<img src='https://github.com/awhisper.png?size=140'>
+				<img src='https://github.com/awhisper.png?size=274'>
 			</a>
 			<h4 align='center'><a href='https://weibo.com/agvicking'>折腾范儿_味精</a></h4>
 		</td>
 		<td id='josephchang10'>
 			<a href='https://github.com/josephchang10'>
-				<img src='https://github.com/josephchang10.png?size=140'>
+				<img src='https://github.com/josephchang10.png?size=274'>
 			</a>
 			<h4 align='center'><a href='https://weibo.com/u/2949394297'>张嘉夫</a></h4>
 		</td>
 		<td id='raozhizhen'>
 			<a href='https://github.com/raozhizhen'>
-				<img src='https://github.com/raozhizhen.png?size=140'>
+				<img src='https://github.com/raozhizhen.png?size=274'>
 			</a>
 			<h4 align='center'><a href='https://weibo.com/AidenRao'>AidenRao</a></h4>
 		</td>
