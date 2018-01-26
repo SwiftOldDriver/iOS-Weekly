@@ -46,7 +46,7 @@
 			<a href='https://github.com/kemchenj'>
 				<img src='https://github.com/kemchenj.png?size=274'>
 			</a>
-			<h4 align='center'><a href='https://weibo.com/kemchenj'>四娘</a></h4>
+			<h4 align='center'><a href='https://twitter.com/kemchenj'>四娘</a></h4>
 		</td>
 	</tr>
 	<tr>
