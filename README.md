@@ -74,6 +74,12 @@
 			</a>
 			<h4 align='center'><a href='https://weibo.com/AidenRao'>AidenRao</a></h4>
 		</td>
+		<td id='ParsifalC'>
+			<a href='https://github.com/ParsifalC'>
+				<img src='https://github.com/ParsifalC.png?size=274'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/parsifalchang'>ParsifalC</a></h4>
+		</td>
 	</tr>
 </table>
 
