@@ -9,6 +9,20 @@
 ## 归档
 
 [周报列表](https://github.com/SwiftOldDriver/iOS-Weekly/tree/master/Reports)
+ 
+|1 - 10|11 - 20| 
+|---|---|
+| [1][1] | [11][11] |
+| [2][2] | |
+| [3][3] | |
+| [4][4] | |
+| [5][5] | |
+| [6][6] | |
+| [7][7] | |
+| [8][8] | |
+| [9][9] | |
+| [10][10] | |
+
 
 ## 其他平台
 
@@ -96,3 +110,16 @@ iOS-Weekly 基于 Apache-2.0 协议进行分发和使用，更多信息参见协
 <img src='https://raw.githubusercontent.com/EyreFree/EFArticles/master/res/cc-by-nc-nd.png' width='145.77' height='51'/>
 
 iOS-Weekly 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
+
+
+[1]:https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/Reports/%231.md
+[2]:https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/Reports/%232.md
+[3]:https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/Reports/%233.md
+[4]:https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/Reports/%234.md
+[5]:https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/Reports/%235.md
+[6]:https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/Reports/%236.md
+[7]:https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/Reports/%237.md
+[8]:https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/Reports/%238.md
+[9]:https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/Reports/%239.md
+[10]:https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/Reports/%2310.md
+[11]:https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/Reports/%2311.md
