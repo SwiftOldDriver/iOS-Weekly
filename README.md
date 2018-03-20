@@ -10,6 +10,10 @@
 
 [周报列表](https://github.com/SwiftOldDriver/iOS-Weekly/tree/master/Reports)
 
+## RSS 订阅
+
+[https://github.com/SwiftOldDriver/iOS-Weekly/wiki.atom](https://github.com/SwiftOldDriver/iOS-Weekly/wiki.atom)
+
 ## 其他平台
 
 掘金：[老司机 iOS 周报](https://juejin.im/user/5a52075e6fb9a01c9d31b107/posts)
