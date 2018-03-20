@@ -18,6 +18,12 @@
 
 掘金：[老司机 iOS 周报](https://juejin.im/user/5a52075e6fb9a01c9d31b107/posts)
 
+公众号：OldDriverWeekly
+
+![](/assets/qrcode_for_wechat.jpg)
+
+
+
 ## 编辑
 
 <table id='team'>
