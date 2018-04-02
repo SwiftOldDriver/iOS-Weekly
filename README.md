@@ -98,7 +98,7 @@
 		</td>
 		<td id='Aaron'>
 			<a href='https://github.com/aaaron7'>
-				<img src='https://github.com/aaaron7.png?size=274'>
+				<img src="https://github.com/aaaron7.png?size=274" width="274" />
 			</a>
 			<h4 align='center'><a href='https://weibo.com/aaaron7'>Aaron</a></h4>
 		</td>
