@@ -6,6 +6,10 @@
 
 你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 [Issues ](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 [Issues ](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 提出。
 
+## 支持我们：老司机精选专栏
+
+我们在小专栏上开通了一个收费专栏：[SwiftOldDriver 精选](https://xiaozhuanlan.com/olddriver-selection) 。**专栏的收入会用于周报编辑部日常运营**。平均每周专栏会更新一篇文章，**持续更新至 18 年底**，专栏的价格为 59 元。如果愿意支持我们欢迎订阅，相信内容也不会让你失望。
+
 ## 归档
 
 [周报列表](https://github.com/SwiftOldDriver/iOS-Weekly/tree/master/Reports)
