@@ -1,20 +1,15 @@
-### Check List
+### 推荐收录 / 意见反馈
 
-Thanks for considering to open an issue. Before you submit your issue, please confirm these boxes are checked.
+请将您认为的有价值的信息、资讯、文章、工具、代码、音视频资料等以链接的形式提交给我们，我们会尽快处理。记得写上推荐的理由哦。如果有任何意见或建议也可以提交给我们，按下方对应提示填写即可，♥
 
-- [ ] I have read the [README.md](https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/README.md), but there is no information I need.
-- [ ] I have searched in [existing issues](https://github.com/SwiftOldDriver/iOS-Weekly/issues?utf8=%E2%9C%93&q=is%3Aissue), but did find a same one.
+#### 链接
 
-### Issue Description
+[此处替换为具体的资源地址]
 
-#### Description
+#### 理由
 
-[Tell us about the issue]
+[此处填写您的推荐理由]
 
-#### Reproduce
+#### 意见反馈（可选）
 
-[The steps to reproduce this issue. What are the parameters, where did you put your code, etc.]
-
-#### Other Comment
-
-[Add anything else here]
+[此处填写您对我们周报的意见或建议]
