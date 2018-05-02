@@ -46,7 +46,7 @@
 
 ## 本期编辑
 
-[@没故事的卓同学](https://weibo.com/1926303682/profile)，[@四娘](https://kemchenj.github.io)，[@mmoaay](https://weibo.com/u/1302422271)，[@享耳先森](https://github.com/iblacksun)，[@EyreFree](https://weibo.com/eyrefree777)，[@Damonwong](https://weibo.com/damonone)，[@折腾范儿_味精](http://weibo.com/agvicking)，[@张嘉夫](https://weibo.com/2949394297)，[@AidenRao](https://weibo.com/AidenRao)，[@Parsifal](https://weibo.com/parsifalchang)， [@叶孤城](https://weibo.com/u/1438670852)，[@aaaron7](https://weibo.com/aaaron7)
+[@没故事的卓同学](https://weibo.com/1926303682/profile)，[@四娘](https://kemchenj.github.io)，[@mmoaay](https://weibo.com/u/1302422271)，[@享耳先森](https://github.com/iblacksun)，[@EyreFree](https://weibo.com/eyrefree777)，[@Damonwong](https://weibo.com/damonone)，[@折腾范儿_味精](http://weibo.com/agvicking)，[@张嘉夫](https://weibo.com/2949394297)，[@AidenRao](https://weibo.com/AidenRao)，[@Parsifal](https://weibo.com/parsifalchang)， [@叶孤城](https://weibo.com/u/1438670852)，[@aaaron7](https://weibo.com/aaaron7)，[@方秋枋](https://weibo.com/100mango)
 
 ## 说明
 
