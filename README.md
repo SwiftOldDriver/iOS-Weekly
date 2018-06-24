@@ -112,7 +112,22 @@
 			</a>
 			<h4 align='center'><a href='https://weibo.com/100mango'>方秋枋</a></h4>
 		</td>
-	</tr>
+
+​		<td id='tom'>
+			<a href='https://github.com/tom510230'>
+				<img src="https://github.com/tom510230.png?size=274" width="274" />
+			</a>
+			<h4 align='center'><a href='https://xiaozhuanlan.com/u/6682065345'>tom</a></h4>
+		</td>
+
+​		<td id='kyo'>
+			<a href='https://github.com/KyoLi'>
+				<img src="https://github.com/KyoLi.png?size=274" width="274" />
+			</a>
+			<h4 align='center'><a href='https://github.com/KyoLi'>kyo</a></h4>
+		</td>
+
+​	</tr>
 	
 </table>
 
