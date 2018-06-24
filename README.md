@@ -139,7 +139,7 @@
 			<a href='https://github.com/waterXu'>
 				<img src="https://github.com/waterXu.png?size=274" width="274" />
 			</a>
-			<h4 align='center'><a href='<https://www.xuyanlan.com'>水水</a></h4>
+			<h4 align='center'><a href='https://www.xuyanlan.com'>水水</a></h4>
 		</td>
 		<td id='looping'>
 			<a href='https://github.com/looping'>
