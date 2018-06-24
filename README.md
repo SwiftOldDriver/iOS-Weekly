@@ -128,7 +128,27 @@
 		</td>
 
 ​	</tr>
-	
+	<tr>
+		<td id='anotheren'>
+			<a href='https://github.com/anotheren'>
+				<img src='https://github.com/anotheren.png?size=274'>
+			</a>
+			<h4 align='center'><a href='https://anotheren.com'>anotheren</a></h4>
+		</td>
+		<td id='shui'>
+			<a href='https://github.com/waterXu'>
+				<img src="https://github.com/waterXu.png?size=274" width="274" />
+			</a>
+			<h4 align='center'><a href='<https://www.xuyanlan.com'>水水</a></h4>
+		</td>
+		<td id='looping'>
+			<a href='https://github.com/looping'>
+				<img src="https://github.com/looping.png?size=274" width="274" />
+			</a>
+			<h4 align='center'><a href='https://github.com/looping'>looping</a></h4>
+		</td>
+
+​	</tr>
 </table>
 
 ## 其他
