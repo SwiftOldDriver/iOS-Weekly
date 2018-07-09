@@ -27,7 +27,6 @@
 ![](/assets/qrcode_for_wechat.jpg)
 
 ## 编辑
-
 <table id='team'>
 	<tr>
 		<td id='lacklock'>
