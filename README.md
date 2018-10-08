@@ -160,6 +160,14 @@
 			<h4 align='center'><a href='https://weibo.com/u/6090610445'>老驴</a></h4>
 		</td>
 ​	</tr>
+	<tr>
+		<td id='xuyafei'>
+			<a href='https://github.com/xiaofei86'>
+				<img src='https://github.com/xiaofei86.png?size=274'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/xuyafei86'>小非86</a></h4>
+		</td>
+​	</tr>
 </table>
 
 ## 其他
