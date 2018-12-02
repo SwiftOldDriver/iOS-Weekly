@@ -172,7 +172,13 @@
 				<img src='https://github.com/linwenbang.png?size=274'>
 			</a>
 			<h4 align='center'><a href='https://weibo.com/linwenbang'>邦Ben</a></h4>
-		</td>
+		</td>	
+		<td id='yuxinwen'>
+			<a href='https://github.com/ChinaFishNews'>
+				<img src='https://github.com/ChinaFishNews.png?size=274'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/chinafishnews/'>含笑饮砒霜</a></h4>
+		</td>		
 ​	</tr>
 </table>
 
