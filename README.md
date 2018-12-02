@@ -178,7 +178,13 @@
 				<img src='https://github.com/ChinaFishNews.png?size=274'>
 			</a>
 			<h4 align='center'><a href='https://weibo.com/chinafishnews/'>含笑饮砒霜</a></h4>
-		</td>		
+		</td>
+		<td id='红纸'>
+			<a href='https://github.com/nianran'>
+				<img src='https://github.com/nianran.png?size=274'>
+			</a>
+			<h4 align='center'><a href='https://weibo.com/u/3211225157/'>_红纸</a></h4>
+		</td>			
 ​	</tr>
 </table>
 
