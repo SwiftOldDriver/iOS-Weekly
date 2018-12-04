@@ -12,7 +12,7 @@
 
 ## 归档
 
-[周报列表](https://github.com/SwiftOldDriver/iOS-Weekly/tree/master/Reports)
+[周报列表](https://github.com/SwiftOldDriver/iOS-Weekly/releases)
 
 ## RSS 订阅
 
