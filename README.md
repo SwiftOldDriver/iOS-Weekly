@@ -16,7 +16,7 @@
 
 ## RSS 订阅
 
-[https://github.com/SwiftOldDriver/iOS-Weekly/wiki.atom](https://github.com/SwiftOldDriver/iOS-Weekly/wiki.atom)
+[https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom](https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom)
 
 ## 其他平台
 
