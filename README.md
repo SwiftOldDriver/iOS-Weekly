@@ -2,6 +2,8 @@
 
 这个时代的问题不是缺乏信息，而是信息太多，不知道那些信息是有价值的，哪些是对我而言有效的信息。既然我们平时也在关注 iOS 开发相关的资讯信息，不如整理出来。我们并不只是资讯的搬运工，也是价值的布道者。关于内容，不局限于具体的 iOS 技术相关的内容。也包括我们认为对于 iOS 开发者有价值的信息，比如软件工程、程序员话题。
 
+[查看往期周报](https://github.com/SwiftOldDriver/iOS-Weekly/releases)
+
 ## 欢迎参与
 
 你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 [Issues ](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 [Issues ](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 提出。
@@ -10,23 +12,17 @@
 
 我们在小专栏上开通了一个收费专栏：[SwiftOldDriver 精选](https://xiaozhuanlan.com/olddriver-selection) 。**专栏的收入会用于周报编辑部日常运营**。平均每周专栏会更新一篇文章，**持续更新至 18 年底**，专栏的价格为 59 元。如果愿意支持我们欢迎订阅，相信内容也不会让你失望。
 
-## 归档
+## 订阅周报
 
-[周报列表](https://github.com/SwiftOldDriver/iOS-Weekly/releases)
+我们提供了多种订阅方式，大家可以按照自己的需求进行选择：
 
-## RSS 订阅
-
-[https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom](https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom)
-
-## 其他平台
-
-掘金：[老司机 iOS 周报](https://juejin.im/user/5a52075e6fb9a01c9d31b107/posts)
-
-公众号：OldDriverWeekly
-
-![](/assets/qrcode_for_wechat.jpg)
+- <details><summary>邮件订阅：点击顶部 Watch 按钮选择 Release Only 模式</summary><p><img src="/assets/release_only.png" alt style="max-width=100%;"></p></details>
+- <details><summary>公众号：OldDriverWeekly</summary><p><img src="/assets/qrcode_for_wechat.jpg" alt style="max-width=100%;"></p></details>
+- RSS：[点击订阅](https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom)
+- 掘金：[老司机 iOS 周报](https://juejin.im/user/5a52075e6fb9a01c9d31b107/posts)
 
 ## 编辑
+
 <table id='team'>
 	<tr>
 		<td id='lacklock'>
