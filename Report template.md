@@ -54,7 +54,7 @@
 
 ![](https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/qrcode_for_wechat.jpg?raw=true)
 
-同时也支持了 RSS 订阅：https://github.com/SwiftOldDriver/iOS-Weekly/wiki.atom 。
+同时也支持了 RSS 订阅：https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom 。
 
 ## 本期编辑
 
