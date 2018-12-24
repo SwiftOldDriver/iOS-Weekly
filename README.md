@@ -18,7 +18,7 @@
 
 - <details><summary>邮件订阅：点击顶部 Watch 按钮选择 Release Only 模式</summary><p><img src="/assets/release_only.png" alt style="max-width=100%;"></p></details>
 - <details><summary>公众号：OldDriverWeekly</summary><p><img src="/assets/qrcode_for_wechat.jpg" alt style="max-width=100%;"></p></details>
-- RSS：[点击订阅](https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom)
+- RSS：[点击获取 RSS 源](https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom)
 - 掘金：[老司机 iOS 周报](https://juejin.im/user/5a52075e6fb9a01c9d31b107/posts)
 
 ## 编辑
