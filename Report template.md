@@ -48,6 +48,8 @@
 
 - [北京百度教育事业部招 iOS 开发](https://www.baidu.com/s?wd=百度)：百度教育事业部，地点：北京西二旗。部门下面有百度阅读，百度文库，百度爱听等 App 产品。团队技术氛围浓厚，有兴趣的同学欢迎将简历发送到我的邮箱：lizelei@baidu.com。
 
+- [深圳 - 格隆汇 iOS / Android / 前端](https://www.lagou.com/gongsi/j84043.html)：公司方向是投研资讯，目前正在稳步扩张中，各个级别的工程师都有需求。任何推荐或者简历都可以发送到我邮箱：[chenkem@gmail.com](mailto:chenkem@gmail.com)，同时也欢迎大家[私信我](https://t.me/kemchenj)了解更多信息。
+
 ## 关注我们
 
 我们开通了公众号，每期发布时公众号（OldDriverWeekly）会推送消息，欢迎关注。
