@@ -48,6 +48,8 @@
 
 - [北京百度教育事业部招 iOS 开发](https://www.baidu.com/s?wd=百度)：百度教育事业部，地点：北京西二旗。部门下面有百度阅读，百度文库，百度爱听等 App 产品。团队技术氛围浓厚，有兴趣的同学欢迎将简历发送到我的邮箱：lizelei@baidu.com。
 
+- [深圳 - 格隆汇 iOS / Android / 前端](https://www.lagou.com/gongsi/j84043.html)：公司方向是投研资讯，目前正在稳步扩张中，各个级别的工程师都有需求。任何推荐或者简历都可以发送到我邮箱：[chenkem@gmail.com](mailto:chenkem@gmail.com)，同时也欢迎大家[私信我](https://t.me/kemchenj)了解更多信息。
+
 ## 关注我们
 
 我们开通了公众号，每期发布时公众号（OldDriverWeekly）会推送消息，欢迎关注。
@@ -58,7 +60,7 @@
 
 ## 本期编辑
 
-[@四娘](https://kemchenj.github.io)，[@享耳先森](https://github.com/iblacksun)，[@Damonwong](https://weibo.com/damonone)，[@折腾范儿_味精](http://weibo.com/agvicking)，[@张嘉夫](https://weibo.com/2949394297)，[@Parsifal](https://weibo.com/parsifalchang)，[@aaaron7](https://weibo.com/aaaron7)，[@方秋枋](https://weibo.com/100mango)，[@kyo](https://github.com/KyoLi)，[@tom510230](https://xiaozhuanlan.com/u/6682065345)，[@anotheren](https://anotheren.com)，[@水水](https://www.xuyanlan.com)，[@looping](https://github.com/looping)，[@老老老老老老老驴](https://weibo.com/u/6090610445)，[@小非86](https://weibo.com/xuyafei86)，[@邦ben](http://weibo.com/linwenbang)，[@红纸](https://github.com/nianran)，[@含笑饮砒霜](http://chinafish.news)，[@JimQ](https://github.com/waz0820)，[@XanderXu](https://github.com/XanderXu)，[@老峰](https://github.com/GesanTung)，[@zvving](https://github.com/zvving)
+[@四娘](https://kemchenj.github.io)，[@享耳先森](https://github.com/iblacksun)，[@Damonwong](https://weibo.com/damonone)，[@折腾范儿_味精](http://weibo.com/agvicking)，[@张嘉夫](https://weibo.com/2949394297)，[@Parsifal](https://weibo.com/parsifalchang)，[@aaaron7](https://weibo.com/aaaron7)，[@kyo](https://github.com/KyoLi)，[@tom510230](https://xiaozhuanlan.com/u/6682065345)，[@anotheren](https://anotheren.com)，[@水水](https://www.xuyanlan.com)，[@looping](https://github.com/looping)，[@老老老老老老老驴](https://weibo.com/u/6090610445)，[@小非86](https://weibo.com/xuyafei86)，[@邦ben](http://weibo.com/linwenbang)，[@红纸](https://github.com/nianran)，[@含笑饮砒霜](http://chinafish.news)，[@JimQ](https://github.com/waz0820)，[@老峰](https://github.com/GesanTung)，[@zvving](https://github.com/zvving)，[@J_Knight_](https://github.com/knightsj)
 
 ## 说明
 
