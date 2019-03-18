@@ -39,6 +39,7 @@
 老司机周报团队联合知识小集和 SwiftGG 翻译组收录了一份靠谱的内推职位。
 
 如果你想**找工作**，点这里：https://www.yuque.com/iosalliance/article/bhutav
+
 如果你想**招人**，点这里：https://www.yuque.com/iosalliance/article/ycyhf3
 
 当然，也欢迎你关注我们每一期的周报，我们会在每期周报底部及时更新编辑内推岗位。
