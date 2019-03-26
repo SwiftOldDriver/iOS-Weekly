@@ -1,11 +1,10 @@
 ## [Swift 5 Release Notes for Xcode 10.2](https://developer.apple.com/documentation/xcode_release_notes/xcode_10_2_release_notes/swift_5_release_notes_for_xcode_10_2)
 
-以下是翻译部分
-
-Swift5 正式更新
+Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团队的 [@Tom](https://xiaozhuanlan.com/u/6682065345) 组织 [@老老老老老老老驴](https://weibo.com/u/6090610445)，[@小非86](https://weibo.com/xuyafei86)，[@邦ben](http://weibo.com/linwenbang) 和 [@极速男孩](https://github.com/ztlyyznf001) 为大家做了第一手的翻译工作，方便大家了解这次对于 Swift 发展史很重要的一次迭代。另外，[@Tom](https://xiaozhuanlan.com/u/6682065345) 所在的深圳头条研发中心正在招募各路好手，有兴趣的可以加他微信 tomtan，切磋技术和聊情怀都可以喔~~~~
 
 ### 概要
-  在 Xcode10.2 版本中，将可以使用 Swift5.0 进行开发
+
+在 Xcode10.2 版本中，将可以使用 Swift5.0 进行开发
 
 ### 总体（General）
 
