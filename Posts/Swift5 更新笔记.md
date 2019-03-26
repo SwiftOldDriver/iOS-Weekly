@@ -14,7 +14,7 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
 
 ### App 瘦身（App Thinning）
 
-### 新特性
+#### 新特性
 
  - Swift 不再包含 Swift 标准库的动态链接，并且会在 iOS 12.2, watchOS 5.2, and tvOS 12.2 中内置 Swift SDK 。从而 Swift apps 在你上传 App Store ，发布 TestFlight 测试，和本地打包时会变得更小。
 
