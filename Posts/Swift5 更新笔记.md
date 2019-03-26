@@ -267,7 +267,7 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
 
 - 传递 null [UnsafeBufferPointer](https://developer.apple.com/documentation/swift/unsafebufferpointer?language=objc)<UInt8> 给 [String](https://developer.apple.com/documentation/swift/string?language=objc) 结构体的 [init(decoding:as:)](https://developer.apple.com/documentation/swift/string/2907004-init?language=objc) 初始化方法现在可以正常的返回空字符串。 (47864610)
 
-## Swift 包管理（Swift Package Manager）
+### Swift 包管理（Swift Package Manager）
 
 #### 新特性
 
