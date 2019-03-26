@@ -8,7 +8,7 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
 
 ### 总体（General）
 
-#### Swift 5 运行时对命令行工具的支持ß
+#### Swift 5 运行时对命令行工具的支持
 
 - Swift 命令行工具从 Xcode 10.2 开始需要依赖于 macOS 中的Swift库。这些库将从 macOS Mojave 10.14.4 开始默认包含在 macOS 中。在 macOS Mojave 10.14.3 和更早的版本中，可以选择从  [More Downloads for Apple Developers](https://developer.apple.com/download/more/) 下载 Swift 命令行工具所需要的运行时库。如果你安装了 beta 版本，需要将其替换成正式版本。只有在 Swift 命令行工具中才需要这个包，而并不适用于具有图形用户界面的应用程序。
 
