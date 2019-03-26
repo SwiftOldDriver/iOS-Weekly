@@ -254,9 +254,10 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
 
 - Xcode 10.2 beta 版本 [Sequence](https://developer.apple.com/documentation/swift/sequence?language=objc) 协议中增加的 ```count(where:)``` 方法已经被移除。(47549309)
 **解决方案：**使用 [reduce(_:_:)](https://developer.apple.com/documentation/swift/anycollection/2906169-reduce?language=objc) 可以高效率地计算与谓词匹配的出现次数：
-```swift
-let occurrences = sequence.reduce(0) { predicate($1) ? $0 + 1 : $0 }
-```
+
+    ```swift
+    let occurrences = sequence.reduce(0) { predicate($1) ? $0 + 1 : $0 }
+    ```
 
 #### 已解决的问题
 
