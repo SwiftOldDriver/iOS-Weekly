@@ -143,7 +143,7 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
 
 - 标准库现在包括 `Result` 枚举 ` Result.success(_:)` 和 `Result.failure(_:)` 。在`do-catch` 语句和 `try` 表达式不能使用的情况下(例如在使用可能失败的异步api时)，使用 `Result` 手动传递和处理错误。
 
-    作为添加的一部分，`Error` 协议的自我一致性，这使得在通用上下文中处理错误更加容易。(SE-0235)(21200405)
+    作为添加的一部分，`Error` 协议的自我一致性，这使得在通用上下文中处理错误更加容易。([SE-0235](https://github.com/apple/swift-evolution/blob/master/proposals/0235-add-result.md))(21200405)
 
 - [SIMD](https://developer.apple.com/documentation/swift/simd) 类型和基本操作符现在在标准库中定义。在 `simd` 框架提供的类型中， [float2](https://developer.apple.com/documentation/simd/float2) 和 [float3](https://developer.apple.com/documentation/simd/float3)，现在是新标准库类型的类型别名。
   
@@ -174,7 +174,7 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
     extension SIMD where Scalar: MySIMDScalarProtocol { /* ... */ }
     ```
 
-    这种更改通常允许您删除许多冗余实现，但它要求您定义任何必要的实现 `Hook`，这些 `Hook` 引用 `Darwin` 系统上标量类型的C头文件中的具体函数。(SE-0229)(17045503)
+    这种更改通常允许您删除许多冗余实现，但它要求您定义任何必要的实现 `Hook`，这些 `Hook` 引用 `Darwin` 系统上标量类型的C头文件中的具体函数。([SE-0229](https://github.com/apple/swift-evolution/blob/master/proposals/0229-simd.md))(17045503)
 
 - [Set](https://developer.apple.com/documentation/swift/set) 和 [Dictionary](https://developer.apple.com/documentation/swift/dictionary) 现在为每个新创建的实例使用不同的散列种子。因此，在 [Set](https://developer.apple.com/documentation/swift/set) 和 [Dictionary](https://developer.apple.com/documentation/swift/dictionary) 中，元素的顺序每次都会改变:
 
@@ -214,7 +214,7 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
 
     哈希和相等判断是相辅相成。如果重写 `hash`，还需要覆盖 `isEqual(_:)`，反之亦然。(42623458)
 
-- [DictionaryLiteral](https://developer.apple.com/documentation/swift/dictionaryliteral) 类型改名成 [KeyValuePairs](https://developer.apple.com/documentation/swift/keyvaluepairs)。 (SE-0214) (23435865)
+- [DictionaryLiteral](https://developer.apple.com/documentation/swift/dictionaryliteral) 类型改名成 [KeyValuePairs](https://developer.apple.com/documentation/swift/keyvaluepairs)。 ([SE-0214](https://github.com/apple/swift-evolution/blob/master/proposals/0214-DictionaryLiteral.md)) (23435865)
 
 - `Swift` 字符串桥接到 `Objective-C` 可能适当地在 [CFStringGetCStringPtr(_:_:)](https://developer.apple.com/documentation/corefoundation/1542133-cfstringgetcstringptr) 返回非 `nil` 值，而从 `UTF8String` 方法返回的指针则绑定到字符串的生命周期，而不是最内层的自动释放池。正确的程序应该不会有任何问题，并可能看到显著的加速。但是，它可能导致以前未测试的代码运行，从而暴露潜在的bug；例如，如果对非 nil 值进行检查，该分支可能从未在 `Swift 5` 之前被执行过。(26236614)
 
@@ -273,11 +273,11 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
 
 #### 新特性
 
-- 当使用 `Swift 5 Package.swift tools-version` 时，`Targets` 可以声明一些常用的、特定于目标的构建设置。还可以根据平台和构建配置对新设置进行条件设置。所包含的构建设置支持 `Swift` 和 `C` 语言定义、`C` 语言头文件搜索路径、链接库和链接 framework。(SE-0238)(23270646)
+- 当使用 `Swift 5 Package.swift tools-version` 时，`Targets` 可以声明一些常用的、特定于目标的构建设置。还可以根据平台和构建配置对新设置进行条件设置。所包含的构建设置支持 `Swift` 和 `C` 语言定义、`C` 语言头文件搜索路径、链接库和链接 framework。([SE-0238](https://github.com/apple/swift-evolution/blob/master/proposals/0238-package-manager-build-settings.md))(23270646)
 
-- 当使用 `Swift 5 Package.swift tools-version` 时，可以指定最低部署版本。如果包的任何包依赖项指定的最小部署目标大于包本身的最小部署目标，则构建会出现错误。(SE-0236) (28253354)
+- 当使用 `Swift 5 Package.swift tools-version` 时，可以指定最低部署版本。如果包的任何包依赖项指定的最小部署目标大于包本身的最小部署目标，则构建会出现错误。([SE-0236](https://github.com/apple/swift-evolution/blob/master/proposals/0236-package-manager-platform-deployment-settings.md)) (28253354)
 
-- 一个新的依赖项镜像特性允许顶级包覆盖依赖项url。(SE-0219)(42511642)
+- 一个新的依赖项镜像特性允许顶级包覆盖依赖项url。([SE-0219](https://github.com/apple/swift-evolution/blob/master/proposals/0219-package-manager-dependency-mirroring.md))(42511642)
 
     使用以下命令设置镜像：
     ```
