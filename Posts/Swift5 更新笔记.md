@@ -46,17 +46,19 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
         case error(Error)
     }
     ```
-    
+
     这样在任何使用了 Foo 模块的代码中，Result 类型都将被认为是 ```Foo.Result```：
     ```Swift
     import Foo
+    
     func doSomething() -> Result<Int> { /* … */ }
     ```
-    
-    那么如果真的想要引用标准库中的[Result](https://developer.apple.com/documentation/swift/result)类型，那么必须加上显式的声明：
-    
+
+    那么如果真的想要引用标准库中的 [Result](https://developer.apple.com/documentation/swift/result) 类型，那么必须加上显式的声明：
+
     ```swift
     import Foo
+    
     func useStandardLibraryResult() -> Swift.Result<Int, Error> { /* … */ }
     ```
 
