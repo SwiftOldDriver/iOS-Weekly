@@ -80,7 +80,7 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
     // 上面的代码实际上是一个语法糖，如果不用语法糖的话，代码会像这样子写   `x.dynamicallyCall(withKeywordArguments: ["label": 1, "": 2])`
     ```
 
-- ```标识键路径（Key paths）```功能现在支持一个特殊的标记方式```（\.self）```，[WritableKeyPath](https://developer.apple.com/documentation/swift/writablekeypath)指代了整个输入值[SE-0227](https://github.com/apple/swift-evolution/blob/master/proposals/0227-identity-keypath.md)）（40538312）
+- ```标识键路径（Key paths）```功能现在支持一个特殊的标记方式```（\.self）```，[WritableKeyPath](https://developer.apple.com/documentation/swift/writablekeypath) 指代了整个输入值（[SE-0227](https://github.com/apple/swift-evolution/blob/master/proposals/0227-identity-keypath.md)）（40538312）
 
     ```swift
     let id = \Int.self
@@ -114,7 +114,7 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
 
 - 在 Swift5 下，```try?```如果用在[可选类型](https://developer.apple.com/documentation/swift/optional)上的话，就算是多层使用，也不会导致返回值是一个多层嵌套的可选类型了。（[SE-0230](https://github.com/apple/swift-evolution/blob/master/proposals/0230-flatten-optional-try.md)）（47313584）
 
-- 如果一个类型```T```符合[Initialization with Literals](https://developer.apple.com/documentation/swift/swift_standard_library/initialization_with_literals)中的一个协议，例如[ExpressibleByIntegerLiteral](https://developer.apple.com/documentation/swift/expressiblebyintegerliteral)，并且是一个标量表达式的话，那么将不需要一直使用```T```用在泛型协议声明中了
+- 如果一个类型```T```符合 [Initialization with Literals](https://developer.apple.com/documentation/swift/swift_standard_library/initialization_with_literals) 中的一个协议，例如 [ExpressibleByIntegerLiteral](https://developer.apple.com/documentation/swift/expressiblebyintegerliteral) ，并且是一个标量表达式的话，那么将不需要一直使用```T```用在泛型协议声明中了
 
     例如：现在可以这样子写一个变量表达式
     
@@ -122,7 +122,7 @@ Swift5 正式更新，官方提供了更新笔记说明，我们周报编辑团�
     UInt64(0xffff_ffff_ffff_ffff) 
     ```
     
-    在之前的版本的话将会导致[Int](https://developer.apple.com/documentation/swift/int)溢出错误。（[SE-0213](https://github.com/apple/swift-evolution/blob/master/proposals/0213-literal-init-via-coercion.md)）（17088188）
+    在之前的版本的话将会导致 [Int](https://developer.apple.com/documentation/swift/int) 溢出错误。（[SE-0213](https://github.com/apple/swift-evolution/blob/master/proposals/0213-literal-init-via-coercion.md)）（17088188）
 
 - 字符串插入大幅提高了性能表现。（[SE-0228](https://github.com/apple/swift-evolution/blob/master/proposals/0228-fix-expressiblebystringinterpolation.md)）（43621912）
 
