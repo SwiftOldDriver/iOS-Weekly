@@ -5,14 +5,13 @@
 
 你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 [Issues](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 [Issues](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 提出。
 
-## 话题
-
-> 从周报的内容出发，聚焦一些话题，和读者一起讨论。
-
 ## 新闻
 
 > 行业相关的新闻、趣事、看法
 
+## 新手推荐
+
+> 收集一些对新手友好且质量不错的文章
 
 ## 文章
 
