@@ -27,7 +27,7 @@
 
 ## 其他
 
-本周报图标及头图设计者为知名设计美学博主 [mmoaay](https://weibo.com/smmoaay)，`Swift 老司机活动中心` 与 `mmoaay` 对其以及其衍生物保留一切权利。
+本周报图标及头图设计者为知名设计美学博主 [@SketchK](https://github.com/SketchK)，`Swift 老司机活动中心` 与 `SketchK` 对其以及其衍生物保留一切权利。另外，非常感谢 [mmoaay](https://weibo.com/smmoaay) 为周报团队设计的第一代 Logo。
 
 ## 协议
 
