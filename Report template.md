@@ -51,10 +51,6 @@
 
 同时也支持了 RSS 订阅：https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom 。
 
-## 本期编辑
-
-[@四娘](https://kemchenj.github.io)，[@享耳先森](https://github.com/iblacksun)，[@Damonwong](https://github.com/Damonvvong)，[@折腾范儿_味精](http://weibo.com/agvicking)，[@张嘉夫](https://weibo.com/2949394297)，[@Parsifal](https://weibo.com/parsifalchang)，[@aaaron7](https://weibo.com/aaaron7)，[@kyo](https://github.com/KyoLi)，[@tom510230](https://xiaozhuanlan.com/u/6682065345)，[@anotheren](https://anotheren.com)，[@水水](https://www.xuyanlan.com)，[@looping](https://github.com/looping)，[@老老老老老老老驴](https://weibo.com/u/6090610445)，[@小非86](https://weibo.com/xuyafei86)，[@邦ben](http://weibo.com/linwenbang)，[@红纸](https://github.com/nianran)，[@含笑饮砒霜](http://chinafish.news)，[@JimQ](https://github.com/waz0820)，[@老峰](https://github.com/GesanTung)，[@zvving](https://github.com/zvving)，[@J_Knight_](https://github.com/knightsj)，[@极速男孩](https://github.com/ztlyyznf001)
-
 ## 说明
 
 🚧 表示需翻墙，🌟 表示编辑推荐
