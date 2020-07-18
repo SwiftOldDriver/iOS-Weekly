@@ -36,7 +36,7 @@
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/linwenbang.png?raw=true'>
 </a>
 <a href='https://github.com/Damonvvong'>
-<img src='hhttps://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Damonvvong.png?raw=true'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Damonvvong.png?raw=true'>
 </a>
 </div>
 
@@ -44,7 +44,7 @@
 
 <div>
 <a href='https://github.com/iblacksun'>
-<img src='https://github.com/iblacksun.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/iblacksun.png?raw=true'>
 </a>
 <a href='https://github.com/EyreFree'>
 <img src='https://github.com/EyreFree.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
