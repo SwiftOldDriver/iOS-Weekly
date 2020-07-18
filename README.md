@@ -8,18 +8,18 @@
 
 你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 [Issues ](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 [Issues ](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 提出。
 
-## 支持我们：老司机精选专栏
+## 支持我们：[WWDC20 内参](https://xiaozhuanlan.com/wwdc20)
 
-我们在小专栏上开通了一个收费专栏：[SwiftOldDriver 精选](https://xiaozhuanlan.com/olddriver-selection) 。**原价 59 元，现在仅 1 元作为读者福利开放**。如果愿意支持我们欢迎订阅，相信内容也不会让你失望。
+一年一度的 WWDC 又来啦！今年一共会有 135 个 Sessions 内容，我们将集结老司机 iOS 周报、知识小集和SwiftGG 翻译组三大组织内的一线 iOS 工程师，为你深度解读 WWDC20 中那些值得关注的 Session。
 
 ## 订阅周报
 
 我们提供了多种订阅方式，大家可以按照自己的需求进行选择：
 
 - <details><summary>邮件订阅：点击顶部 Watch 按钮选择 Release Only 模式</summary><p><img src="/assets/release_only.png" alt style="max-width=100%;"></p></details>
-- <details><summary>公众号：OldDriverWeekly</summary><p><img src="/assets/qrcode_for_wechat.jpg" alt style="max-width=100%;"></p></details>
+- <details><summary>公众号：老司机技术周报</summary><p><img src="/assets/qrcode_for_wechat.jpg" alt style="max-width=100%;"></p></details>
 - RSS：[点击获取 RSS 源](https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom)
-- 掘金：[老司机 iOS 周报](https://juejin.im/user/5a52075e6fb9a01c9d31b107/posts)
+- 掘金：[老司机技术周报](https://juejin.im/user/5a52075e6fb9a01c9d31b107/posts)
 
 ## 检索周报
 
