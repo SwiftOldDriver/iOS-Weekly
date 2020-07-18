@@ -47,79 +47,79 @@
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/iblacksun.png?raw=true'>
 </a>
 <a href='https://github.com/EyreFree'>
-<img src='https://github.com/EyreFree.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/EyreFree.png?raw=true'>
 </a>
 <a href='https://github.com/kemchenj'>
-<img src='https://github.com/kemchenj.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/kemchenj.png?raw=true'>
 </a>
 <a href='https://github.com/Damonvvong'>
-<img src='https://github.com/Damonvvong.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Damonvvong.png?raw=true'>
 </a>
 <a href='https://github.com/josephchang10'>
-<img src='https://github.com/josephchang10.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/josephchang10.png?raw=true'>
 </a>
 <a href='https://github.com/raozhizhen'>
-<img src='https://github.com/raozhizhen.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/raozhizhen.png?raw=true'>
 </a>
 <a href='https://github.com/ParsifalC'>
-<img src='https://github.com/ParsifalC.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/ParsifalC.png?raw=true'>
 </a>
 <a href='https://github.com/aaaron7'>
-<img src='https://github.com/aaaron7.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/aaaron7.png?raw=true'>
 </a>
 <a href='https://github.com/KyoLi'>
-<img src='https://github.com/KyoLi.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/KyoLi.png?raw=true'>
 </a>
 <a href='https://github.com/anotheren'>
-<img src='https://github.com/anotheren.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/anotheren.png?raw=true'>
 </a>
 <a href='https://github.com/waterXu'>
-<img src='https://github.com/waterXu.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/josephchang10.png?raw=true'>
 </a>
 <a href='https://github.com/looping'>
-<img src='https://github.com/looping.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/looping.png?raw=true'>
 </a>
 <a href='https://github.com/olddonkey'>
-<img src='https://github.com/olddonkey.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/olddonkey.png?raw=true'>
 </a>
 <a href='https://github.com/xiaofei86'>
-<img src='https://github.com/xiaofei86.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/xiaofei86.png?raw=true'>
 </a>
 <a href='https://github.com/linwenbang'>
-<img src='https://github.com/linwenbang.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/linwenbang.png?raw=true'>
 </a>
 <a href='https://github.com/ChinaFishNews'>
-<img src='https://github.com/ChinaFishNews.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/ChinaFishNews.png?raw=true'>
 </a>
 <a href='https://github.com/nianran'>
-<img src='https://github.com/nianran.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/nianran.png?raw=true'>
 </a>
 <a href='https://github.com/waz0820'>
-<img src='https://github.com/waz0820.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/waz0820.png?raw=true'>
 </a>
 <a href='https://github.com/zvving'>
-<img src='https://github.com/zvving.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/zvving.png?raw=true'>
 </a>
 <a href='https://github.com/GesanTung'>
-<img src='https://github.com/GesanTung.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/GesanTung.png?raw=true'>
 </a>
 <a href='https://github.com/knightsj'>
-<img src='https://github.com/knightsj.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/knightsj.png?raw=true'>
 </a>
 <a href='https://github.com/CrazyCoderShi'>
-<img src='https://github.com/CrazyCoderShi.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/CrazyCoderShi.png?raw=true'>
 </a>
 <a href='https://github.com/SatanWoo'>
-<img src='https://github.com/SatanWoo.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/SatanWoo.png?raw=true'>
 </a>
 <a href='https://github.com/ztlyyznf001'>
-<img src='https://github.com/ztlyyznf001.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/ztlyyznf001.png?raw=true'>
 </a>
 <a href='https://github.com/JonyFang'>
-<img src='https://github.com/JonyFang.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/JonyFang.png?raw=true'>
 </a>
 <a href='https://github.com/ZengyiMa'>
-<img src='https://github.com/ZengyiMa.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/ZengyiMa.png?raw=true'>
 </a>
 </div>
 
@@ -127,25 +127,25 @@
 
 <div>
 <a href='https://github.com/lacklock'>
-<img src='https://github.com/lacklock.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/lacklock.png?raw=true'>
 </a>
 <a href='https://github.com/mmoaay'>
-<img src='https://github.com/mmoaay.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/mmoaay.png?raw=true'>
 </a>
 <a href='https://github.com/awhisper'>
-<img src='https://github.com/awhisper.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/awhisper.png?raw=true'>
 </a>
 <a href='https://github.com/zangqilong198812'>
-<img src='https://github.com/zangqilong198812.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/zangqilong198812.png?raw=true'>
 </a>
 <a href='https://github.com/100mango'>
-<img src='https://github.com/100mango.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/100mango.png?raw=true'>
 </a>
 <a href='https://github.com/tom510230'>
-<img src='https://github.com/tom510230.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/tom510230.png?raw=true'>
 </a>
 <a href='https://github.com/yxztj'>
-<img src='https://github.com/yxztj.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/yxztj.png?raw=true'>
 </a>
 </div>
 
