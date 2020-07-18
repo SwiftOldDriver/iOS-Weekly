@@ -1,4 +1,4 @@
-![](/assets/ios-weekly.png)
+![](https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/ios-weekly.png?raw=true)
 
 这个时代的问题不是缺乏信息，而是信息太多，不知道哪些信息是有价值的，哪些是对我而言有效的信息。既然我们平时也在关注 iOS 开发相关的资讯信息，不如整理出来。我们并不只是资讯的搬运工，也是价值的布道者。关于内容，不局限于具体的 iOS 技术相关的内容。也包括我们认为对于 iOS 开发者有价值的信息，比如软件工程、程序员话题。
 
@@ -16,8 +16,8 @@
 
 我们提供了多种订阅方式，大家可以按照自己的需求进行选择：
 
-- <details><summary>邮件订阅：点击顶部 Watch 按钮选择 Release Only 模式</summary><p><img src="/assets/release_only.png" alt style="max-width=100%;"></p></details>
-- <details><summary>公众号：老司机技术周报</summary><p><img src="/assets/qrcode_for_wechat.jpg" alt style="max-width=100%;"></p></details>
+- <details><summary>邮件订阅：点击顶部 Watch 按钮选择 Release Only 模式</summary><p><img src="https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/release_only.png?raw=true" alt style="max-width=100%;"></p></details>
+- <details><summary>公众号：老司机技术周报</summary><p><img src="https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/qrcode_for_wechat.jpg?raw=true" alt style="max-width=100%;"></p></details>
 - RSS：[点击获取 RSS 源](https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom)
 - 掘金：[老司机技术周报](https://juejin.im/user/5a52075e6fb9a01c9d31b107/posts)
 
@@ -25,115 +25,142 @@
 
 利用 GitHub [Search In This Repository](https://github.com/SwiftOldDriver/iOS-Weekly/search?q=swift&unscoped_q=swift) 功能可以快速检索出往期周报收录的内容。
 
-## 编辑
+<style type="text/css">
+.round_icon{
+  width: 48px;
+  margin: 3px;
+  height: 48px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+</style>
 
-<table id='team'>
-    <tr>
-        <td id='lacklock'><a href='https://github.com/lacklock'><img src='https://github.com/lacklock.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/u/1926303682'>没故事的卓同学</a></h4>
-        </td>
-        <td id='iblacksun'><a href='https://github.com/iblacksun'><img src='https://github.com/iblacksun.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/iblacksun'>享耳先森</a></h4>
-        </td>
-        <td id='mmoaay'><a href='https://github.com/mmoaay'><img src='https://github.com/mmoaay.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/smmoaay'>mmoaay</a></h4>
-        </td>
-        <td id='EyreFree'><a href='https://github.com/EyreFree'><img src='https://github.com/EyreFree.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/eyrefree777'>EyreFree</a></h4>
-        </td>
-        <td id='kemchenj'><a href='https://github.com/kemchenj'><img src='https://github.com/kemchenj.png?size=274'></a>
-            <h4 align='center'><a href='https://twitter.com/kemchenj'>四娘</a></h4>
-        </td>
-    </tr>
-    <tr>
-        <td id='Damonvvong'><a href='https://github.com/Damonvvong'><img src='https://github.com/Damonvvong.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/damonone'>Damonwong</a></h4>
-        </td>
-        <td id='awhisper'><a href='https://github.com/awhisper'><img src='https://github.com/awhisper.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/agvicking'>折腾范儿_味精</a></h4>
-        </td>
-        <td id='josephchang10'><a href='https://github.com/josephchang10'><img src='https://github.com/josephchang10.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/u/2949394297'>张嘉夫</a></h4>
-        </td>
-        <td id='raozhizhen'><a href='https://github.com/raozhizhen'><img src='https://github.com/raozhizhen.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/AidenRao'>AidenRao</a></h4>
-        </td>
-        <td id='ParsifalC'><a href='https://github.com/ParsifalC'><img src='https://github.com/ParsifalC.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/parsifalchang'>ParsifalC</a></h4>
-        </td>
-    </tr>
-    <tr>
-        <td id='zangqilong198812'><a href='https://github.com/zangqilong198812'><img src='https://github.com/zangqilong198812.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/u/1438670852'>叶孤城___</a></h4>
-        </td>
-        <td id='Aaron'><a href='https://github.com/aaaron7'><img src="https://github.com/aaaron7.png?size=274" width="274" /></a>
-            <h4 align='center'><a href='https://weibo.com/aaaron7'>Aaron</a></h4>
-        </td>
-        <td id='Mango'><a href='https://github.com/100mango'><img src="https://github.com/100mango.png?size=274" width="274" /></a>
-            <h4 align='center'><a href='https://weibo.com/100mango'>方秋枋</a></h4>
-        </td> ​ <td id='tom'><a href='https://github.com/tom510230'><img src="https://github.com/tom510230.png?size=274" width="274" /></a>
-            <h4 align='center'><a href='https://xiaozhuanlan.com/u/6682065345'>tom</a></h4>
-        </td> ​ <td id='kyo'><a href='https://github.com/KyoLi'><img src="https://github.com/KyoLi.png?size=274" width="274" /></a>
-            <h4 align='center'><a href='https://github.com/KyoLi'>kyo</a></h4>
-        </td>
-    </tr>
-    <tr>
-        <td id='anotheren'><a href='https://github.com/anotheren'><img src='https://github.com/anotheren.png?size=274'></a>
-            <h4 align='center'><a href='https://anotheren.com'>anotheren</a></h4>
-        </td>
-        <td id='shui'><a href='https://github.com/waterXu'><img src="https://github.com/waterXu.png?size=274" width="274" /></a>
-            <h4 align='center'><a href='https://www.xuyanlan.com'>水水</a></h4>
-        </td>
-        <td id='looping'><a href='https://github.com/looping'><img src="https://github.com/looping.png?size=274" width="274" /></a>
-            <h4 align='center'><a href='https://github.com/looping'>looping</a></h4>
-        </td> ​ <td id='Jason'><a href='https://github.com/yxztj'><img src="https://github.com/yxztj.png?size=274" width="274" /></a>
-            <h4 align='center'><a href='https://weibo.com/jasonyuh'>JasonYuh</a></h4>
-        </td> ​ <td id='olddonkey'><a href='https://weibo.com/u/6090610445'><img src="https://github.com/olddonkey.png?size=274" width="274" /></a>
-            <h4 align='center'><a href='https://weibo.com/u/6090610445'>老驴</a></h4>
-        </td>
-    </tr>
-    <tr>
-        <td id='xuyafei'><a href='https://github.com/xiaofei86'><img src='https://github.com/xiaofei86.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/xuyafei86'>小非86</a></h4>
-        </td>
-        <td id='bangben'><a href='https://weibo.com/linwenbang'><img src='https://github.com/linwenbang.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/linwenbang'>邦Ben</a></h4>
-        </td>
-        <td id='yuxinwen'><a href='https://github.com/ChinaFishNews'><img src='https://github.com/ChinaFishNews.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/chinafishnews/'>含笑饮砒霜</a></h4>
-        </td>
-        <td id='红纸'><a href='https://github.com/nianran'><img src='https://github.com/nianran.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/u/3211225157/'>_红纸</a></h4>
-        </td>
-        </td>
-        <td id='jimq'><a href='https://github.com/waz0820'><img src='https://github.com/waz0820.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/u/3427304820/'>jimq</a></h4>
-        </td>
-    </tr>
-    <tr>
-        <td id='zvving'><a href='https://github.com/zvving'><img src='https://github.com/zvving.png?size=274'></a>
-            <h4 align='center'><a href='https://twitter.com/zvving'>曾铭_zvving</a></h4>
-        </td>
-        <td id=‘老峰’><a href='https://www.weibo.com/6131406761'><img src='https://github.com/GesanTung.png?size=274'></a>
-            <h4 align='center'><a href='https://github.com/GesanTung'>老峰</a></h4>
-        </td>
-        <td id='J_Knight_'><a href='https://github.com/knightsj'><img src='https://github.com/knightsj.png?size=274'></a>
-            <h4 align='center'><a href='https://www.weibo.com/1929625262/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1/'>J_Knight_</a></h4>
-        </td>
-        <td id='CrazyCoderShi'><a href='https://github.com/CrazyCoderShi'><img src='https://tvax3.sinaimg.cn/crop.0.0.667.667.180/ba05aa62ly8fjolz38hqsj20ij0ij74x.jpg'></a>
-            <h4 align='center'><a href='https://weibo.com/3120933474/profile?topnav=1&wvr=6&is_all=1'>CrazyCoderShi</a></h4>
-        </td>
-        <td id='SatanWoo'><a href='https://github.com/SatanWoo'><img src='https://github.com/SatanWoo.png?size=274'></a>
-            <h4 align='center'><a href='https://weibo.com/billgawu'>SatanWoo</a></h4>
-        </td>
-    </tr>
-        </td>
-        <td id='极速男孩'><a href='https://github.com/ztlyyznf001'><img src='https://avatars1.githubusercontent.com/u/14541874?s=460&u=755165e21c3018c7702955600d2a977128eaaf80&v=4'></a>
-            <h4 align='center'><a href='https://github.com/ztlyyznf001'>极速男孩</a></h4>
-        </td>
-    <tr>
-    </tr>
-</table>
+## 贡献名单
+
+#### 轮值主编
+<div>
+<a href='https://github.com/ParsifalC'>
+<img src='https://github.com/ParsifalC.png' class="round_icon">
+</a>
+<a href='https://github.com/linwenbang'>
+<img src='https://github.com/linwenbang.png' class="round_icon">
+</a>
+<a href='https://github.com/Damonvvong'>
+<img src='https://github.com/Damonvvong.png' class="round_icon">
+</a>
+</div>
+
+#### 现任编辑
+
+<div>
+<a href='https://github.com/iblacksun'>
+<img src='https://github.com/iblacksun.png' class="round_icon">
+</a>
+<a href='https://github.com/EyreFree'>
+<img src='https://github.com/EyreFree.png' class="round_icon">
+</a>
+<a href='https://github.com/kemchenj'>
+<img src='https://github.com/kemchenj.png' class="round_icon">
+</a>
+<a href='https://github.com/Damonvvong'>
+<img src='https://github.com/Damonvvong.png' class="round_icon">
+</a>
+<a href='https://github.com/josephchang10'>
+<img src='https://github.com/josephchang10.png' class="round_icon">
+</a>
+<a href='https://github.com/raozhizhen'>
+<img src='https://github.com/raozhizhen.png' class="round_icon">
+</a>
+<a href='https://github.com/ParsifalC'>
+<img src='https://github.com/ParsifalC.png' class="round_icon">
+</a>
+<a href='https://github.com/aaaron7'>
+<img src='https://github.com/aaaron7.png' class="round_icon">
+</a>
+<a href='https://github.com/KyoLi'>
+<img src='https://github.com/KyoLi.png' class="round_icon">
+</a>
+<a href='https://github.com/anotheren'>
+<img src='https://github.com/anotheren.png' class="round_icon">
+</a>
+<a href='https://github.com/waterXu'>
+<img src='https://github.com/waterXu.png' class="round_icon">
+</a>
+<a href='https://github.com/looping'>
+<img src='https://github.com/looping.png' class="round_icon">
+</a>
+<a href='https://github.com/olddonkey'>
+<img src='https://github.com/olddonkey.png' class="round_icon">
+</a>
+<a href='https://github.com/xiaofei86'>
+<img src='https://github.com/xiaofei86.png' class="round_icon">
+</a>
+<a href='https://github.com/linwenbang'>
+<img src='https://github.com/linwenbang.png' class="round_icon">
+</a>
+<a href='https://github.com/ChinaFishNews'>
+<img src='https://github.com/ChinaFishNews.png' class="round_icon">
+</a>
+<a href='https://github.com/nianran'>
+<img src='https://github.com/nianran.png' class="round_icon">
+</a>
+<a href='https://github.com/waz0820'>
+<img src='https://github.com/waz0820.png' class="round_icon">
+</a>
+<a href='https://github.com/zvving'>
+<img src='https://github.com/zvving.png' class="round_icon">
+</a>
+<a href='https://github.com/GesanTung'>
+<img src='https://github.com/GesanTung.png' class="round_icon">
+</a>
+<a href='https://github.com/knightsj'>
+<img src='https://github.com/knightsj.png' class="round_icon">
+</a>
+<a href='https://github.com/CrazyCoderShi'>
+<img src='https://github.com/CrazyCoderShi.png' class="round_icon">
+</a>
+<a href='https://github.com/SatanWoo'>
+<img src='https://github.com/SatanWoo.png' class="round_icon">
+</a>
+<a href='https://github.com/ztlyyznf001'>
+<img src='https://github.com/ztlyyznf001.png' class="round_icon">
+</a>
+<a href='https://github.com/JonyFang'>
+<img src='https://github.com/JonyFang.png' class="round_icon">
+</a>
+<a href='https://github.com/ZengyiMa'>
+<img src='https://github.com/ZengyiMa.png' class="round_icon">
+</a>
+</div>
+
+#### 荣誉编辑
+
+<div>
+<a href='https://github.com/lacklock'>
+<img src='https://github.com/lacklock.png' class="round_icon">
+</a>
+<a href='https://github.com/mmoaay'>
+<img src='https://github.com/mmoaay.png' class="round_icon">
+</a>
+<a href='https://github.com/awhisper'>
+<img src='https://github.com/awhisper.png' class="round_icon">
+</a>
+<a href='https://github.com/zangqilong198812'>
+<img src='https://github.com/zangqilong198812.png' class="round_icon">
+</a>
+<a href='https://github.com/100mango'>
+<img src='https://github.com/100mango.png' class="round_icon">
+</a>
+<a href='https://github.com/tom510230'>
+<img src='https://github.com/tom510230.png' class="round_icon">
+</a>
+<a href='https://github.com/yxztj'>
+<img src='https://github.com/yxztj.png' class="round_icon">
+</a>
+</div>
+
 
 ## 其他
 
@@ -141,12 +168,10 @@
 
 ## 协议
 
-<img alt="Apache-2.0 license" src="https://lucene.apache.org/images/mantle-power.png" width="128">
+<img alt="Apache-2.0 license" src="https://www.apache.org/img/ASF20thAnniversary.jpg" width="128">
 
 iOS-Weekly 基于 Apache-2.0 协议进行分发和使用，更多信息参见协议文件。
 
-<img src='https://raw.githubusercontent.com/EyreFree/EFArticles/master/res/cc-by-nc-nd.png' width='145.77' height='51'/>
+<img src='https://github.com/EyreFree/EFArticles/blob/master/res/cc-by-nc-nd.png?raw=true' width='145.77' height='51'/>
 
 iOS-Weekly 所含文章使用以下协议进行保护：[署名-非商业性使用-禁止演绎](http://creativecommons.org/licenses/by-nc-nd/3.0/cn/)。
-
-
