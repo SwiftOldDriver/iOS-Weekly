@@ -25,30 +25,18 @@
 
 利用 GitHub [Search In This Repository](https://github.com/SwiftOldDriver/iOS-Weekly/search?q=swift&unscoped_q=swift) 功能可以快速检索出往期周报收录的内容。
 
-<style type="text/css">
-.round_icon{
-  width: 48px;
-  margin: 3px;
-  height: 48px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-</style>
-
 ## 贡献名单
 
 #### 轮值主编
 <div>
 <a href='https://github.com/ParsifalC'>
-<img src='https://github.com/ParsifalC.png' class="round_icon">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/ParsifalC.png?raw=true'>
 </a>
 <a href='https://github.com/linwenbang'>
-<img src='https://github.com/linwenbang.png' class="round_icon">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/linwenbang.png?raw=true'>
 </a>
 <a href='https://github.com/Damonvvong'>
-<img src='https://github.com/Damonvvong.png' class="round_icon">
+<img src='hhttps://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Damonvvong.png?raw=true'>
 </a>
 </div>
 
@@ -56,82 +44,82 @@
 
 <div>
 <a href='https://github.com/iblacksun'>
-<img src='https://github.com/iblacksun.png' class="round_icon">
+<img src='https://github.com/iblacksun.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/EyreFree'>
-<img src='https://github.com/EyreFree.png' class="round_icon">
+<img src='https://github.com/EyreFree.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/kemchenj'>
-<img src='https://github.com/kemchenj.png' class="round_icon">
+<img src='https://github.com/kemchenj.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/Damonvvong'>
-<img src='https://github.com/Damonvvong.png' class="round_icon">
+<img src='https://github.com/Damonvvong.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/josephchang10'>
-<img src='https://github.com/josephchang10.png' class="round_icon">
+<img src='https://github.com/josephchang10.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/raozhizhen'>
-<img src='https://github.com/raozhizhen.png' class="round_icon">
+<img src='https://github.com/raozhizhen.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/ParsifalC'>
-<img src='https://github.com/ParsifalC.png' class="round_icon">
+<img src='https://github.com/ParsifalC.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/aaaron7'>
-<img src='https://github.com/aaaron7.png' class="round_icon">
+<img src='https://github.com/aaaron7.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/KyoLi'>
-<img src='https://github.com/KyoLi.png' class="round_icon">
+<img src='https://github.com/KyoLi.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/anotheren'>
-<img src='https://github.com/anotheren.png' class="round_icon">
+<img src='https://github.com/anotheren.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/waterXu'>
-<img src='https://github.com/waterXu.png' class="round_icon">
+<img src='https://github.com/waterXu.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/looping'>
-<img src='https://github.com/looping.png' class="round_icon">
+<img src='https://github.com/looping.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/olddonkey'>
-<img src='https://github.com/olddonkey.png' class="round_icon">
+<img src='https://github.com/olddonkey.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/xiaofei86'>
-<img src='https://github.com/xiaofei86.png' class="round_icon">
+<img src='https://github.com/xiaofei86.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/linwenbang'>
-<img src='https://github.com/linwenbang.png' class="round_icon">
+<img src='https://github.com/linwenbang.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/ChinaFishNews'>
-<img src='https://github.com/ChinaFishNews.png' class="round_icon">
+<img src='https://github.com/ChinaFishNews.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/nianran'>
-<img src='https://github.com/nianran.png' class="round_icon">
+<img src='https://github.com/nianran.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/waz0820'>
-<img src='https://github.com/waz0820.png' class="round_icon">
+<img src='https://github.com/waz0820.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/zvving'>
-<img src='https://github.com/zvving.png' class="round_icon">
+<img src='https://github.com/zvving.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/GesanTung'>
-<img src='https://github.com/GesanTung.png' class="round_icon">
+<img src='https://github.com/GesanTung.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/knightsj'>
-<img src='https://github.com/knightsj.png' class="round_icon">
+<img src='https://github.com/knightsj.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/CrazyCoderShi'>
-<img src='https://github.com/CrazyCoderShi.png' class="round_icon">
+<img src='https://github.com/CrazyCoderShi.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/SatanWoo'>
-<img src='https://github.com/SatanWoo.png' class="round_icon">
+<img src='https://github.com/SatanWoo.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/ztlyyznf001'>
-<img src='https://github.com/ztlyyznf001.png' class="round_icon">
+<img src='https://github.com/ztlyyznf001.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/JonyFang'>
-<img src='https://github.com/JonyFang.png' class="round_icon">
+<img src='https://github.com/JonyFang.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/ZengyiMa'>
-<img src='https://github.com/ZengyiMa.png' class="round_icon">
+<img src='https://github.com/ZengyiMa.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 </div>
 
@@ -139,25 +127,25 @@
 
 <div>
 <a href='https://github.com/lacklock'>
-<img src='https://github.com/lacklock.png' class="round_icon">
+<img src='https://github.com/lacklock.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/mmoaay'>
-<img src='https://github.com/mmoaay.png' class="round_icon">
+<img src='https://github.com/mmoaay.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/awhisper'>
-<img src='https://github.com/awhisper.png' class="round_icon">
+<img src='https://github.com/awhisper.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/zangqilong198812'>
-<img src='https://github.com/zangqilong198812.png' class="round_icon">
+<img src='https://github.com/zangqilong198812.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/100mango'>
-<img src='https://github.com/100mango.png' class="round_icon">
+<img src='https://github.com/100mango.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/tom510230'>
-<img src='https://github.com/tom510230.png' class="round_icon">
+<img src='https://github.com/tom510230.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 <a href='https://github.com/yxztj'>
-<img src='https://github.com/yxztj.png' class="round_icon">
+<img src='https://github.com/yxztj.png' style="width: 48px; margin: 3px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; overflow: hidden;">
 </a>
 </div>
 
