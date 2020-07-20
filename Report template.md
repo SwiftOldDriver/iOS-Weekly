@@ -45,7 +45,7 @@
 
 ## 关注我们
 
-我们开通了公众号，每期发布时公众号（OldDriverWeekly）会推送消息，欢迎关注。
+我们开通了公众号，每期发布时公众号（LSJCoding）会推送消息，欢迎关注。
 
 ![](https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/qrcode_for_wechat.jpg?raw=true)
 
