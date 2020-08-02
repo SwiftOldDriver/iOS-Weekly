@@ -74,7 +74,7 @@
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/anotheren.png?raw=true'>
 </a>
 <a href='https://github.com/waterXu'>
-<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/josephchang10.png?raw=true'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/waterXu.png?raw=true'>
 </a>
 <a href='https://github.com/looping'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/looping.png?raw=true'>
