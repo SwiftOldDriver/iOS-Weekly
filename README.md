@@ -154,6 +154,12 @@
 
 本周报图标及头图设计者为知名设计美学博主 [@SketchK](https://github.com/SketchK)，`Swift 老司机活动中心` 与 `SketchK` 对其以及其衍生物保留一切权利。另外，非常感谢 [mmoaay](https://weibo.com/smmoaay) 为周报团队设计的第一代 Logo。
 
+## 赞助者
+
+[Woodpecker](https://apps.apple.com/cn/app/woodpecker/id1333548463?mt=12): 是一款 iOS 开发调试辅助工具，提供沙盒文件、UserDefaults、视图层级在线查看和编辑等功能，在实际工作中能极大提升开发效率和幸福感！
+
+**非常感谢以上赞助者的支持，如果你也有赞助我们的兴趣，欢迎添加微信 iTDriver 哦~**
+
 ## 协议
 
 <img alt="Apache-2.0 license" src="https://www.apache.org/img/ASF20thAnniversary.jpg" width="128">
