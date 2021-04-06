@@ -159,7 +159,7 @@
 
 ## 赞助者
 
-[Woodpecker](https://apps.apple.com/cn/app/woodpecker/id1333548463?mt=12): iOS开发辅助工具，提供沙盒文件、UserDefaults、视图层级在线查看和编辑等功能，在工作中能极大提升开发效率，Mac App Store免费下载！
+虚位以待..
 
 **非常感谢以上赞助者的支持，如果你也有赞助我们的兴趣，欢迎添加微信 iTDriverr 哦~**
 
