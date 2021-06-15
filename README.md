@@ -10,7 +10,7 @@
 
 ## 支持我们：[WWDC21 内参](https://xiaozhuanlan.com/wwdc21)
 
-- 一年一度的 WWDC 又来啦！今年一共会有 100+ 个 Sessions 内容，我们将集结老司机 iOS 周报以及社区内的一线 iOS 工程师，为你深度解读 WWDC21 中那些值得关注的 Session。
+- 一年一度的 WWDC 又来啦！今年官方一共会有 220+ 个 Sessions 内容，我们将集结老司机 iOS 周报编辑以及社区内的一线 iOS 工程师，为你深度解读 WWDC21 中那些值得关注的 Session。
 - 戴铭老师的「[iOS 开发高手课](http://gk.link/a/10qjQ)」内容质量很高，很适合中高级开发者学习。
 
 
