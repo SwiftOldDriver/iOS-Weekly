@@ -126,6 +126,9 @@
 <a href='https://github.com/LeoMobileDeveloper'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/LeoMobileDeveloper.jpeg?raw=true'>
 </a>
+<a href='https://github.com/iostalks'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/iostalks.png?raw=true'>
+</a>
 </div>
 
 #### 荣誉编辑
