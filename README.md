@@ -57,9 +57,6 @@
 <a href='https://github.com/Damonvvong'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Damonvvong.png?raw=true'>
 </a>
-<a href='https://github.com/josephchang10'>
-<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/josephchang10.png?raw=true'>
-</a>
 <a href='https://github.com/raozhizhen'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/raozhizhen.png?raw=true'>
 </a>
@@ -78,9 +75,6 @@
 <a href='https://github.com/waterXu'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/waterXu.png?raw=true'>
 </a>
-<a href='https://github.com/looping'>
-<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/looping.png?raw=true'>
-</a>
 <a href='https://github.com/olddonkey'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/olddonkey.png?raw=true'>
 </a>
@@ -95,9 +89,6 @@
 </a>
 <a href='https://github.com/nianran'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/nianran.png?raw=true'>
-</a>
-<a href='https://github.com/waz0820'>
-<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/waz0820.png?raw=true'>
 </a>
 <a href='https://github.com/zvving'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/zvving.png?raw=true'>
@@ -154,6 +145,15 @@
 </a>
 <a href='https://github.com/yxztj'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/yxztj.png?raw=true'>
+</a>
+<a href='https://github.com/josephchang10'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/josephchang10.png?raw=true'>
+</a>
+<a href='https://github.com/looping'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/looping.png?raw=true'>
+</a>
+<a href='https://github.com/waz0820'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/waz0820.png?raw=true'>
 </a>
 </div>
 
