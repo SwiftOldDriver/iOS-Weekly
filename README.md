@@ -120,6 +120,9 @@
 <a href='https://github.com/iostalks'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/iostalks.png?raw=true'>
 </a>
+<a href='https://github.com/BarneyZhaoooo'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/barney.png?raw=true'>
+</a>
 </div>
 
 #### 荣誉编辑
