@@ -29,9 +29,6 @@
 
 #### 轮值主编
 <div>
-<a href='https://github.com/ParsifalC'>
-<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/ParsifalC.png?raw=true'>
-</a>
 <a href='https://github.com/linwenbang'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/linwenbang.png?raw=true'>
 </a>
@@ -57,9 +54,6 @@
 </a>
 <a href='https://github.com/raozhizhen'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/raozhizhen.png?raw=true'>
-</a>
-<a href='https://github.com/ParsifalC'>
-<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/ParsifalC.png?raw=true'>
 </a>
 <a href='https://github.com/aaaron7'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/aaaron7.png?raw=true'>
@@ -100,9 +94,6 @@
 <a href='https://github.com/CrazyCoderShi'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/CrazyCoderShi.png?raw=true'>
 </a>
-<a href='https://github.com/SatanWoo'>
-<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/SatanWoo.png?raw=true'>
-</a>
 <a href='https://github.com/ztlyyznf001'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/ztlyyznf001.png?raw=true'>
 </a>
@@ -120,6 +111,7 @@
 </a>
 <a href='https://github.com/ChengzhiHuang'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/chengzhi.png?raw=true'>
+</a>
 <a href='https://github.com/BarneyZhaoooo'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/barney.png?raw=true'>
 </a>
@@ -157,6 +149,12 @@
 </a>
 <a href='https://github.com/waz0820'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/waz0820.png?raw=true'>
+</a>
+<a href='https://github.com/ParsifalC'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/ParsifalC.png?raw=true'>
+</a>
+<a href='https://github.com/SatanWoo'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/SatanWoo.png?raw=true'>
 </a>
 </div>
 
