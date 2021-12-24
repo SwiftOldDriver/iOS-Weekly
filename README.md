@@ -29,11 +29,11 @@
 
 #### 轮值主编
 <div>
-<a href='https://github.com/linwenbang'>
-<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/linwenbang.png?raw=true'>
-</a>
 <a href='https://github.com/Damonvvong'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Damonvvong.png?raw=true'>
+</a>
+<a href='https://github.com/linwenbang'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/linwenbang.png?raw=true'>
 </a>
 </div>
 
@@ -160,7 +160,7 @@
 
 ## 关于我们
 
-老司机技术周报是一个由移动端技术爱好者组成的团体，致力于在信息爆炸的时代将真正有价值的内容输送给读者。我们曾联合 SwiftGG 和知识小集等一起组织了近 4 年的《WWDC 内参》活动，GitHub、公众号和掘金等平台均拥有广大的读者群体，2018 年至今共发布 170 余期，各个渠道累计周报的阅读量达 500 多万次。
+老司机技术周报是一个由移动端技术爱好者组成的团体，致力于在信息爆炸的时代将真正有价值的内容输送给读者。我们曾联合 SwiftGG 和知识小集等一起组织了近 4 年的《WWDC 内参》活动，GitHub、公众号和掘金等平台均拥有广大的读者群体，2018 年至今共发布 180 余期，各个渠道累计周报的阅读量达 500 多万次。
 
 ## 其他
 
