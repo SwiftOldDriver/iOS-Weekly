@@ -1,0 +1,90 @@
+# 老司机 iOS 周报 #189 | 2022-01-17
+
+![ios-weekly](https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/ios-weekly.png?raw=true)
+老司机 iOS 周报，只为你呈现有价值的信息。
+
+你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 [Issues](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 [Issues](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 提出。
+
+## 新闻
+
+> 行业相关的新闻、趣事、看法
+
+## 新手推荐
+
+> 收集一些对新手友好且质量不错的文章
+
+## 文章
+
+> 写的不错的技术博客，包含但不局限于 iOS、多端统一、设计、产品等
+
+### 🐎 [Xcode 配置多套 App 图标的方法 --- AppStore 图标 A/B Test 实践](https://mp.weixin.qq.com/s/BApDWf9acuFBSONzV2OnEQ)
+
+[@老峰](https://github.com/gesantung)：2021 年 12 月 08 日，苹果推出 App Store 产品页的新功能，在 App Store 中开发者可以针对 app 产品页的不同版本上使用不同的图标、截屏和 app 预览，通过 A/B Test 找出效果最佳的版本。本文主要介绍了使用 Xcode 13 在 Assets.xcassets 创建多套测试的图标的操作细节以及要注意的一些点。
+
+### 🐎 [让 UIKit 更优雅易用：Block 回调改造](https://juejin.cn/post/7045133536495403015)
+
+[@JonyFang](https://github.com/JonyFang)：HWBlocksUI 对 UITableView，UITextField，UIButton，UISwitch 等常用的 UIKit 类进行了扩展，将之前需要 Delegate 或 target+selector 回调的方式改成了 Block。使用 Block 的优势体现在：
+
+1. 代码紧凑，无需声明协议，可以将相关代码逻辑集中在一起，降低开发调试成本；
+2. 允许访问上下文变量，无需再专门抽出实例变量供不同代理方法共享；
+
+### 🐢 [Cube 技术解读 | Cube 小程序技术详解](https://mp.weixin.qq.com/s/Sm2xtyxPMGucUHtaUy_aOQ)
+
+[@Leo](https://github.com/leomobiledeveloper)：在动态化或者跨端开发里，小程序是一个业界典型的实现方案。Cube 是阿里出品的轻量级小程序技术栈，具有体积小、启动快、内存占用低等特点。本文详细介绍了 Cube 小程序技术栈与技术演进实践，包含了布局计算、样式能力、组件支持、引擎优化等方方面面，推荐阅读。
+
+### 🐢 [Swift Playgrounds 4 娱乐还是生产力](https://mp.weixin.qq.com/s/Uyd9Nf12HpmslYR0zOQaEQ)
+
+[@anotheren](https://github.com/anotheren)：赶在 2021 年底，苹果终于发布了 Swift Playgrounds 4，作为近年来最具革命性意义的版本，Swift Playgrounds 4 提供了在 iPad 上开发并发行 App 的能力。本文介绍了这个版本的最新功能。如果你还没入门，不妨再读一下下面这个系列：
+
+- [玩转 Xcode Playground（上）](https://mp.weixin.qq.com/s/rHNrTt7CReTLL8aubz0SqQ)
+- [玩转 Xcode Playground（下）](https://mp.weixin.qq.com/s/_kggsB9kL5jYi-40KDMsrQ)
+
+## 摸鱼周报
+
+[@摸鱼周报 #11](https://mp.weixin.qq.com/s/hE9wYlLX8F1sKjIF5eIPVQ)：本期摸鱼周报带来了
+
+## 工具
+
+> 开发过程中常用的工具，及一些新工具的介绍
+
+## 代码
+
+> 库，代码段，开源app
+
+## 书
+
+> 比较不错的书的推荐和书评
+
+## 音视频
+
+> 比较不错的书的推荐和书评
+
+## 赞助者
+
+虚位以待..
+
+**非常感谢以上赞助者的支持，如果你也有赞助我们的兴趣，欢迎添加微信 iTDriverr 哦~**
+
+## 内推
+
+老司机周报团队联合知识小集和 SwiftGG 翻译组收录了一份靠谱的内推职位。
+
+如果你想**找工作**，点这里：https://www.yuque.com/iosalliance/article/bhutav
+
+如果你想**招人**，点这里：https://www.yuque.com/iosalliance/article/ycyhf3
+
+当然，也欢迎你关注我们每一期的周报，我们会在每期周报底部及时更新编辑内推岗位。
+
+## 关注我们
+
+我们开通了公众号，每期发布时公众号（LSJCoding）会推送消息，欢迎关注。
+
+![](https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/qrcode_for_wechat.jpg?raw=true)
+
+同时也支持了 RSS 订阅：https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom 。
+
+## 说明
+
+🚧 表示需某工具，🌟 表示编辑推荐
+
+预计阅读时间：🐎 很快就能读完（1 - 10 mins）；🐕 中等 （10 - 20 mins）；🐢 慢（20+ mins）
