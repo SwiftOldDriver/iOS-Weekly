@@ -122,8 +122,8 @@
 <a href='https://github.com/BarneyZhaoooo'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/barney.png?raw=true'>
 </a>
-<a href='https://github.com/jiyan135960'>
-<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/CrazyZhang.png?raw=true'>
+<a href='https://github.com/cjlcooper'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/CooperChen.png?raw=true'>
 </a>
 <a href='https://github.com/zoeGuo'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/zoeGuo.png?raw=true'>
