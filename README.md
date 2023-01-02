@@ -33,6 +33,9 @@
 
 #### 轮值主编
 <div>
+<a href='https://github.com/ChengzhiHuang'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/chengzhi.png?raw=true'>
+</a>
 <a href='https://github.com/Damonvvong'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Damonvvong.png?raw=true'>
 </a>
