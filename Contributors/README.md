@@ -17,3 +17,9 @@
 <img src="https://avatars.githubusercontent.com/u/6942765?v=4" width="150"/>
 
 老司机技术发起人。WWDC19 ~ 20 内参主要负责人。独立开发者（App：打工人小组件）。积极拥抱 SwiftUI。
+
+### 老黄 / ChengzhiHuang
+
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/chengzhi.png?raw=true'>
+
+老司机技术成员，周报轮值主编。目前就职于字节跳动，参与西瓜视频质量与稳定性工作。对 OOM/Watchdog 较为了解并长期投入。月球厨师；Amphibian 与 打越钢太郎 的粉丝。
