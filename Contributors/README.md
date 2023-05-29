@@ -12,7 +12,7 @@
 
 老司机周报编辑 / T 技术沙龙运营负责人 / 开源爱好者 / Sprout 技术负责人。
 
-### 没故事的卓同学
+### 没故事的卓同学/lacklock
 
 <img src="https://avatars.githubusercontent.com/u/6942765?v=4" width="150"/>
 
