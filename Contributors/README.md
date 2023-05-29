@@ -11,3 +11,9 @@
 <img src="https://avatars.githubusercontent.com/u/10757132?v=4" width="150"/>
 
 老司机周报编辑 / T 技术沙龙运营负责人 / 开源爱好者 / Sprout 技术负责人。
+
+### 没故事的卓同学
+
+<img src="https://avatars.githubusercontent.com/u/6942765?v=4" width="150"/>
+
+老司机技术发起人。WWDC19 ~ 20 内参主要负责人。独立开发者（App：打工人小组件）。积极拥抱 SwiftUI。
