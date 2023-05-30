@@ -159,3 +159,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/12381169?v=4" width="150"/>
 
 老司机周报编辑，目前就职于哔哩哔哩，负责直播基础、业务开发。日常喜欢研究一些基础框架的底层原理，业余会跑跑步、打打球。
+
+### 天南 / CrazyCoderShi
+
+<img src="https://avatars.githubusercontent.com/u/12297224?v=4" width="150"/>
+
+老司机技术成员，无业游民，天天瞎折腾；目前用 Flutter 写移动端。
