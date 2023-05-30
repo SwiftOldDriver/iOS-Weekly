@@ -30,7 +30,7 @@
 
 老司机技术二代目，新技术爱好者，微医移动技术负责人，看球不打球，虎扑十多年潜水党。
 
-### 不老的老陈 / Cooper
+### Cooper
 
 <img src='https://avatars.githubusercontent.com/u/8022145?s=40&v=4' width='150'>
 
