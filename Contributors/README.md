@@ -165,3 +165,51 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/12297224?v=4" width="150"/>
 
 老司机技术成员，无业游民，天天瞎折腾；目前用 Flutter 写移动端。
+
+### 老峰
+
+<img src="https://avatars.githubusercontent.com/u/5457612?v=4" width="150"/>
+
+### CrazyZhang
+
+<img src="https://avatars.githubusercontent.com/u/8816364?v=4" width="150"/>
+
+### mmoaay
+
+<img src="https://avatars.githubusercontent.com/u/4161013?v=4" width="150"/>
+
+### Awhisper
+
+<img src="https://avatars.githubusercontent.com/u/4347733?v=4" width="150"/>
+
+### 叶孤城 / Yegucheng
+
+<img src="https://avatars.githubusercontent.com/u/8814535?v=4" width="150"/>
+
+### 芒果 / 100mango
+
+<img src="https://avatars.githubusercontent.com/u/5073511?v=4" width="150"/>
+
+### 小T / tom510230
+
+<img src="https://avatars.githubusercontent.com/u/5229148?v=4" width="150"/>
+
+### Jason Yu
+
+<img src="https://avatars.githubusercontent.com/u/3334458?v=4" width="150"/>
+
+### 张嘉夫 / josephchang10
+
+<img src="https://avatars.githubusercontent.com/u/5158525?v=4" width="150"/>
+
+### Looping
+
+<img src="https://avatars.githubusercontent.com/u/442607?v=4" width="150"/>
+
+### waz0820
+
+<img src="https://avatars.githubusercontent.com/u/4947872?v=4" width="150"/>
+
+### 五子棋 / SatanWoo
+
+<img src="https://avatars.githubusercontent.com/u/1303079?v=4" width="150"/>
