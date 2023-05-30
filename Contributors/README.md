@@ -87,3 +87,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/16701393?v=4" width="150"/>
 
 老司机周报编辑，目前就职于百度，随便做点、研究点东西。渴望尽早退休，善于发现美好，乐于享受生活。
+
+### Zvving
+
+<img src="https://avatars.githubusercontent.com/u/485079?v=4" width="150"/>
+
+老司机周报编辑，目前就职于字节跳动，负责音乐创作客户端开发。热爱开源理念，每周一场足球不看球，任氏主机党塞尔达是天。
