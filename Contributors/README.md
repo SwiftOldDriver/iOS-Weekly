@@ -190,6 +190,8 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/4347733?v=4" width="150"/>
 
+老司机技术成员，目前就职于蚂蚁金服，参与支付宝 APP 的开发工作，base 北京，常年出差杭州，不折腾不舒服司机。
+
 ### 叶孤城 / Yegucheng
 
 <img src="https://avatars.githubusercontent.com/u/8814535?v=4" width="150"/>
@@ -203,6 +205,8 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 ### 小T / tom510230
 
 <img src="https://avatars.githubusercontent.com/u/5229148?v=4" width="150"/>
+
+老司机技术曾经活跃的编辑，从iOS4开始入坑，现在专注于跨平台技术相关领域
 
 ### Jason Yu
 
