@@ -105,3 +105,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src='https://avatars.githubusercontent.com/u/11988088?v=4' width='150'>
 
 老司机周报编辑，目前就职于智谱华章，参与大模型 ToC 相关业务开发。喜欢尝试新鲜事物，乐于探索，在变优秀的路上不断努力中～长板初学者。
+
+### BZ / BarneyZhaoooo
+
+<img src="https://avatars.githubusercontent.com/u/11523970?&v=4" width="150"/>
+
+老司机周报编辑 / B站 / 原神、星穹铁道爱好者。
