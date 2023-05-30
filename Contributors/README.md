@@ -133,3 +133,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 ### Kyo
 <img src="https://avatars.githubusercontent.com/u/4088084?s=400&u=e27d033f3b8994e2fb36bd35dc3da23ce758c970&v=4" width="150"/>
 老司机周报编辑，目前就职于百度小说，负责客户端团队，关注文档、图书排版体验。喜欢的很多，这里说不过来。
+
+### xiaofei86
+
+<img src="https://avatars.githubusercontent.com/u/8192632?v=4" width="150"/>
+
+老司机周报编辑，目前就职于百度，负责百度网盘客户端基础架构相关的工作，正在折腾前端。日常躺平，梦想当一名卷王。
