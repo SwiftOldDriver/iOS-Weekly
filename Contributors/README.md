@@ -99,3 +99,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/11420716?v=4" width="150"/>
 
 老司机周报编辑，周报轮值主编，曾担任 WWDC 内参文章审核，目前就职于字节跳动 - 剪映，负责剪辑工具侧相关业务，最近入坑羽毛球被虐菜，塞尔达工业革命溜街中。
+
+### 慕牧 / Zoe
+
+<img src='https://avatars.githubusercontent.com/u/11988088?v=4' width='150'>
+
+老司机周报编辑，目前就职于智谱华章，参与大模型 ToC 相关业务开发。喜欢尝试新鲜事物，乐于探索，在变优秀的路上不断努力中～长板初学者。
