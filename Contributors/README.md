@@ -129,3 +129,7 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/14541874?v=4" width="150"/>
 
 老司机周报编辑，目前就职于回想科技，沉迷于 Flutter。喜欢各种数码产品。
+
+### Kyo
+<img src="https://avatars.githubusercontent.com/u/4088084?s=400&u=e27d033f3b8994e2fb36bd35dc3da23ce758c970&v=4" width="150"/>
+老司机周报编辑，目前就职于百度小说，负责客户端团队，关注文档、图书排版体验。喜欢的很多，这里说不过来。
