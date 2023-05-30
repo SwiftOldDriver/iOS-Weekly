@@ -170,6 +170,8 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/5457612?v=4" width="150"/>
 
+老司机周报编辑，技术狂热，混迹币圈，希望早日自由。
+
 ### CrazyZhang
 
 <img src="https://avatars.githubusercontent.com/u/8816364?v=4" width="150"/>
