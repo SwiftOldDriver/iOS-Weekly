@@ -61,3 +61,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/8831241?v=4" width="150"/>
 
 老司机周报编辑，WWDC 内参小助手背后的男人。目前就职于阿里巴巴，负责手淘 CI/CD 和研发效率相关工作。爱折腾新玩意儿。Dota2 仅 6k 小时的菜鸡。
+
+### 水水
+
+<img src="https://avatars.githubusercontent.com/u/5960998?v=4" width="150"/>
+
+老司机周报编辑，偶尔 T 技术沙龙 的临时工，目前就职于百度（上海），百度输入法 iOS & Mac 应用的程序媛。美食、徒步爱好者~
