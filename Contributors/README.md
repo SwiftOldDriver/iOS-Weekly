@@ -194,6 +194,8 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/8814535?v=4" width="150"/>
 
+老司机早期作者，现在佛系划水，独立开发者(app:灵动大陆)，积极拥抱 SwiftUI too
+
 ### 芒果 / 100mango
 
 <img src="https://avatars.githubusercontent.com/u/5073511?v=4" width="150"/>
