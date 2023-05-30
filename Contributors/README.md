@@ -153,3 +153,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/22208754?v=4" width="150"/>
 
 老司机技术成员，就职于某 404 公司， 努力写算法和推进项目中...
+
+### JonyFang
+
+<img src="https://avatars.githubusercontent.com/u/12381169?v=4" width="150"/>
+
+老司机周报编辑，目前就职于哔哩哔哩，负责直播基础、业务开发。日常喜欢研究一些基础框架的底层原理，业余会跑跑步、打打球。
