@@ -176,9 +176,15 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/8816364?v=4" width="150"/>
 
+### anotheren
+
+<img src="https://avatars.githubusercontent.com/u/13653643?v=4" width="150"/>
+
 ### mmoaay
 
 <img src="https://avatars.githubusercontent.com/u/4161013?v=4" width="150"/>
+
+老司机早期编辑 / T沙龙负责人
 
 ### Awhisper
 
