@@ -180,6 +180,8 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/13653643?v=4" width="150"/>
 
+老司机周报编辑，新晋奶爸，无业游民，正在向全栈独立开发者努力，熟悉图像与视频技术，希望在 AI 与 VR 浪潮中，找到新的定位。
+
 ### mmoaay
 
 <img src="https://avatars.githubusercontent.com/u/4161013?v=4" width="150"/>
