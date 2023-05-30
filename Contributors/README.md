@@ -124,3 +124,8 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 老司机周报编辑，目前就职于网易云音乐，负责长音频大前端业务。喜欢 Swift，对前端技术比较感兴趣。业务爱好健身，想当一名粗狗。
 
+### 极速男孩007
+
+<img src="https://avatars.githubusercontent.com/u/14541874?v=4" width="150"/>
+
+老司机周报编辑，目前就职于回想科技，沉迷于 Flutter。喜欢各种数码产品。
