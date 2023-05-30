@@ -122,7 +122,7 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/12881129?v=4" width="150"/>
 
-老司机技术成员，目前就职于网易云音乐，负责长音频大前端业务。喜欢 Swift，对前端技术比较感兴趣。业务爱好健身，想当一名粗狗。
+老司机技术成员，目前就职于网易云音乐，负责长音频大前端业务。喜欢 Swift，对前端技术比较感兴趣。业务爱好健身，想当一枚粗狗。
 
 ### 极速男孩007
 
