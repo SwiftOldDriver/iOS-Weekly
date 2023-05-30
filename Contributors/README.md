@@ -176,6 +176,8 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/8816364?v=4" width="150"/>
 
+老司机周报编辑，另类的 Android 开发，Flutter 忠实拥护者，Unity 爱好人员，王者中毒人员。
+
 ### anotheren
 
 <img src="https://avatars.githubusercontent.com/u/13653643?v=4" width="150"/>
