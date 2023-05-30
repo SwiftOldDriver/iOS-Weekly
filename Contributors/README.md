@@ -74,3 +74,10 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/15663899?v=4" width="150"/>
 
 老司机周报编辑，目前就职于字节跳动，负责 TikTok iOS 客户端体验。喜欢研究一些技术底层的原理，业余喜欢主机游戏（特别是魂类游戏）。
+
+
+### 莲叔
+
+<img src="https://avatars.githubusercontent.com/u/16416236?v=4" width="150" />
+
+老司机周报编辑，就职于uc，负责直播业务。主要关注音视频、端智能相关技术。原神57级摆烂中，最近开始打壁球。
