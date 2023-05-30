@@ -96,6 +96,6 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 ### 邦Ben
 
-<img src="https://avatars.githubusercontent.com/u/485079?v=4" width="150"/>
+<img src="https://avatars.githubusercontent.com/u/11420716?v=4" width="150"/>
 
 老司机周报编辑，周报轮值主编，曾担任 WWDC 审核，目前就职于字节跳动 - 剪映，负责剪辑工具侧相关业务，最近入坑羽毛球被虐菜，塞尔达工业革命溜街中。
