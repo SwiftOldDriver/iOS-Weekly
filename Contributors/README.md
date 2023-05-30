@@ -49,3 +49,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/10378703?v=4" width="150"/>
 
 老司机周报编辑，目前就职于字节跳动，参与抖音 APP 的开发工作，base 成都。想成为作家，又或者独立开发者，游戏设计师。擅长当韭菜。
+
+### 享耳先森
+
+<img src="https://avatars.githubusercontent.com/u/712004?v=4" width="150"/>
+
+老司机周报编辑，目前就职于丁香园。参与丁香医生、丁香妈妈等 App 开发，还有自己的独立 App 骑行控。
