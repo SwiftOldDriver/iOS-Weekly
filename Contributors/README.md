@@ -216,6 +216,8 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/5158525?v=4" width="150"/>
 
+独立开发者，数字游民。
+
 ### Looping
 
 <img src="https://avatars.githubusercontent.com/u/442607?v=4" width="150"/>
