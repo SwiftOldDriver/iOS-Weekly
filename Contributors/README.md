@@ -43,3 +43,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/12953705?v=4" width="150"/>
 
 老司机周报编辑，目前就职于同花顺，参与人工智能相关的业务开发。重度股票 & 期货爱好者。
+
+### AidenRao
+
+<img src="https://avatars.githubusercontent.com/u/10378703?v=4" width="150"/>
+
+老司机周报编辑，目前就职于字节跳动，参与抖音 APP 的开发工作，base 成都。想成为作家，又或者独立开发者，游戏设计师。擅长当韭菜。
