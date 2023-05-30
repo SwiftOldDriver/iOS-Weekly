@@ -35,4 +35,5 @@
 <img src='https://avatars.githubusercontent.com/u/8022145?s=40&v=4' width='150'>
 
 老司机周报编辑，目前就职于 Zoom，参与 Zoom 桌面端基建开发，负责性能优化、稳定性维护和 CI 相关工作，重度自驾游爱好者。
+
 Editor of Old Driver Weekly, currently working at Zoom, involved in the development of Zoom desktop infrastructure, responsible for performance optimization, stability maintenance, and CI related work, and a heavy self driving enthusiast.
