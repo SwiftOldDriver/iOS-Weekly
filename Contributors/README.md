@@ -29,3 +29,9 @@
 <img src='https://avatars.githubusercontent.com/u/7930911?v=4' width='150'>
 
 老司机技术二代目，新技术爱好者，微医移动技术负责人，看球不打球，虎扑十多年潜水党。
+
+### 不老的老陈 / Cooper
+
+<img src='https://avatars.githubusercontent.com/u/8022145?s=40&v=4' width='150'>
+
+老司机周报编辑，目前就职于 Zoom，参与 Zoom 桌面端基建开发，负责性能优化、稳定性维护和 CI 相关工作，重度自驾游爱好者。
