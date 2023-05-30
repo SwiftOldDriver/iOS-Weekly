@@ -206,7 +206,7 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/5229148?v=4" width="150"/>
 
-老司机技术曾经活跃的编辑，从iOS4开始入坑，现在专注于跨平台技术相关领域
+老司机技术曾经活跃的编辑，从 iOS 4 开始入坑，目前在剪映项目组，专注于跨平台技术相关领域
 
 ### Jason Yu
 
