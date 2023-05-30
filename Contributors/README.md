@@ -93,3 +93,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/485079?v=4" width="150"/>
 
 老司机周报编辑，目前就职于字节跳动，负责音乐创作客户端开发。热爱开源理念，每周一场足球不看球，任氏主机党塞尔达是天。
+
+### 邦Ben
+
+<img src="https://avatars.githubusercontent.com/u/485079?v=4" width="150"/>
+
+老司机周报编辑，周报轮值主编，曾担任 WWDC 审核，目前就职于字节跳动 - 剪映，负责剪辑工具侧相关业务，最近入坑羽毛球被虐菜，塞尔达工业革命溜街中。
