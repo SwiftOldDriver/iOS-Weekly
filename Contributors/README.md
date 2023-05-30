@@ -111,3 +111,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/11523970?&v=4" width="150"/>
 
 老司机周报编辑 / B站 / 原神、星穹铁道爱好者。
+
+### Damien
+
+<img src="https://avatars.githubusercontent.com/u/3383471?v=4" width="150"/>
+
+老司机周报编辑，目前就职于字节跳动，负责 TikTok 客户端隐私相关的工作。喜欢研究一些新新技术，爱折腾。
