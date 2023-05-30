@@ -81,3 +81,9 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 <img src="https://avatars.githubusercontent.com/u/16416236?v=4" width="150" />
 
 老司机周报编辑，就职于uc，负责直播业务。主要关注音视频、端智能相关技术。原神57级摆烂中，最近开始打壁球。
+
+### 含笑饮砒霜
+
+<img src="https://avatars.githubusercontent.com/u/16701393?v=4" width="150"/>
+
+老司机周报编辑，目前就职于百度，随便做点、研究点东西。渴望尽早退休，善于发现美好，乐于享受生活。
