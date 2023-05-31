@@ -208,7 +208,7 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 https://github.com/100mango
 
-老司机早期编辑，大道至简 keep it simple and stupid
+老司机早期编辑，喜欢清晰简洁的代码与技术方案
 
 ### 小T / tom510230
 
