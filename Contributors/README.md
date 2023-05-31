@@ -206,6 +206,10 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/5073511?v=4" width="150"/>
 
+https://github.com/100mango
+
+老司机早期编辑，大道至简 keep it simple and stupid
+
 ### 小T / tom510230
 
 <img src="https://avatars.githubusercontent.com/u/5229148?v=4" width="150"/>
