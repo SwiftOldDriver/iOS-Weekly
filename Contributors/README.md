@@ -239,3 +239,5 @@ https://github.com/100mango
 ### 五子棋 / SatanWoo
 
 <img src="https://avatars.githubusercontent.com/u/1303079?v=4" width="150"/>
+
+老司机技术成员，就职于阿里巴巴淘宝，负责 端智能/AR/VR 等技术
