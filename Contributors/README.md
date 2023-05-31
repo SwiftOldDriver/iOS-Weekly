@@ -230,6 +230,8 @@ https://github.com/100mango
 
 <img src="https://avatars.githubusercontent.com/u/442607?v=4" width="150"/>
 
+老司机技术成员，目前全力为小项目打杂，争取做大。业余爱好代码重构和算法设计，资浅科幻推理迷。
+
 ### waz0820
 
 <img src="https://avatars.githubusercontent.com/u/4947872?v=4" width="150"/>
