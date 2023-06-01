@@ -232,9 +232,11 @@ https://github.com/100mango
 
 老司机技术成员，目前全力为小项目打杂，争取做大。业余爱好代码重构和算法设计，资浅科幻推理迷。
 
-### waz0820
+### JimQ
 
 <img src="https://avatars.githubusercontent.com/u/4947872?v=4" width="150"/>
+
+老司机技术候补队员。All in AI-App。理想是：大河向东流，财务挺自由。已经实现了上半句。
 
 ### 五子棋 / SatanWoo
 
