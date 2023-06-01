@@ -1,4 +1,4 @@
-# 老司机 iOS 周报 #1 | 2022-03-25
+# 老司机 iOS 周报 #229 | 2023-03-25
 
 ![ios-weekly](https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/ios-weekly.png?raw=true)
 老司机 iOS 周报，只为你呈现有价值的信息。
@@ -43,13 +43,9 @@
 
 ## 内推
 
-老司机周报团队联合知识小集和 SwiftGG 翻译组收录了一份靠谱的内推职位。
+重新开始更新「iOS 靠谱内推专题」，整理了最近明确在招人的岗位，供大家参考
 
-如果你想**找工作**，点这里：https://www.yuque.com/iosalliance/article/bhutav
-
-如果你想**招人**，点这里：https://www.yuque.com/iosalliance/article/ycyhf3
-
-当然，也欢迎你关注我们每一期的周报，我们会在每期周报底部及时更新编辑内推岗位。
+具体信息请移步：https://www.yuque.com/iosalliance/article/bhutav 进行查看（如有招聘需求请联系 iTDriverr）
 
 ## 关注我们
 

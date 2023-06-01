@@ -8,9 +8,13 @@
 
 你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 [Issues ](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 [Issues ](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 提出。
 
-## 支持我们：[WWDC21 内参](https://xiaozhuanlan.com/wwdc21)
+## 支持我们：[WWDC22 内参](https://xiaozhuanlan.com/wwdc22)
 
-- 一年一度的 WWDC 又来啦！今年官方一共会有 220+ 个 Sessions 内容，我们将集结老司机 iOS 周报编辑以及社区内的一线 iOS 工程师，为你深度解读 WWDC21 中那些值得关注的 Session。
+**WWDC22 内参** 目前已经更新了 35 篇内容，今年我们采用了双审核机制，使得内容质量相比较于前两年**有了一个质的提升**，目前正在五折价格销售，大家可以点击链接订阅，我们会在内容全部更新完成后恢复原价。
+
+**WWDC 内参** 系列是由「老司机技术」牵头组织的精品原创内容系列。已经做了几年了，口碑一直不错。和往年不同，今年几乎没有脱水稿了，得益于组建的审核团队和不断优化的创作流程，大家创作的内容都已经超越了视频本身的内容，非常有学习和参考意义。
+
+> 双审核机制：一位审核从专业性角度看内容是否正确，另外一位审核从读者角度看知识是否正确引导。
 
 ## 订阅周报
 
@@ -29,6 +33,9 @@
 
 #### 轮值主编
 <div>
+<a href='https://github.com/ChengzhiHuang'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/chengzhi.png?raw=true'>
+</a>
 <a href='https://github.com/Damonvvong'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Damonvvong.png?raw=true'>
 </a>
@@ -114,6 +121,15 @@
 </a>
 <a href='https://github.com/BarneyZhaoooo'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/barney.png?raw=true'>
+</a>
+<a href='https://github.com/cjlcooper'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/CooperChen.png?raw=true'>
+</a>
+<a href='https://github.com/jiyan135960'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/jiyan135960.png?raw=true'>
+</a>
+<a href='https://github.com/zoeGuo'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/zoeGuo.png?raw=true'>
 </a>
 </div>
 
