@@ -60,7 +60,7 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/8831241?v=4" width="150"/>
 
-老司机技术成员，WWDC 内参小助手背后的男人。目前就职于阿里巴巴，负责手淘 CI/CD 和研发效率相关工作。爱折腾新玩意儿。Dota2 仅 6k 小时的菜鸡。
+老司机技术成员，WWDC 内参小助手（初号机）。目前就职于阿里巴巴，负责手淘 CI/CD 和研发效率相关工作。爱折腾新玩意儿。Dota2 仅 6k 小时的菜鸡。
 
 ### 水水
 
