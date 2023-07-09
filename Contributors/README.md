@@ -146,7 +146,7 @@ Editor of Old Driver Weekly, currently working at Zoom, involved in the developm
 
 <img src="https://avatars.githubusercontent.com/u/11192474?v=4" width="150"/>
 
-老司机技术成员 / 开源爱好者 / 最近在做 3D 重建相关的开发工作
+老司机技术核心成员 / 开源爱好者 / 最近在做 3D 重建相关的开发工作
 
 ### 老驴
 
