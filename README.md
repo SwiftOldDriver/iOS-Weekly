@@ -1,4 +1,4 @@
-![](https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/weekly-header/258.png?raw=true)
+![](https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/weekly-header/259.png?raw=true)
 
 这个时代的问题不是缺乏信息，而是信息太多，不知道哪些信息是有价值的，哪些是对我而言有效的信息。既然我们平时也在关注 iOS 开发相关的资讯信息，不如整理出来。我们并不只是资讯的搬运工，也是价值的布道者。关于内容，不局限于具体的 iOS 技术相关的内容。也包括我们认为对于 iOS 开发者有价值的信息，比如软件工程、程序员话题。
 
