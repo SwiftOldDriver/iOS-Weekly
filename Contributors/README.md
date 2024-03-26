@@ -243,3 +243,9 @@ https://github.com/100mango
 <img src="https://avatars.githubusercontent.com/u/1303079?v=4" width="150"/>
 
 老司机技术成员，就职于阿里巴巴淘宝，负责 端智能/AR/VR 等技术
+
+### Kyle-Ye
+
+<img src="https://avatars.githubusercontent.com/u/43724855?v=4" width="150"/>
+
+老司机技术成员，Swift Documentation Workgroup 成员，独立开发者
