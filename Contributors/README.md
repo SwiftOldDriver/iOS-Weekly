@@ -249,3 +249,9 @@ https://github.com/100mango
 <img src="https://avatars.githubusercontent.com/u/43724855?v=4" width="150"/>
 
 老司机技术成员，Swift Documentation Workgroup 成员，独立开发者
+
+### DylanYang
+
+<img src="https://avatars.githubusercontent.com/u/5527453?v=4" width="150"/>
+
+老司机技术成员，目前就职于字节跳动，参与音乐相关客户端开发，业余喜欢看看番、打打游戏。
