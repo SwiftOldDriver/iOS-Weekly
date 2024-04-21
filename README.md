@@ -131,6 +131,13 @@
 <a href='https://github.com/zoeGuo'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/zoeGuo.png?raw=true'>
 </a>
+<a href='https://github.com/Dylan19Yang'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/DylanYang.png?raw=true' width="50">
+</a>
+<a href='https://github.com/Kyle-Ye'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Kyle-Ye.png?raw=true' width="50">
+</a>
+
 </div>
 
 #### 荣誉编辑
