@@ -47,7 +47,7 @@
 
 我们是「老司机技术周报」，一个持续追求精品 iOS 内容的技术公众号，欢迎关注。
 
-**关注有礼，关注【老司机技术周报】，回复「2023」，领取 2023 及往年内参**
+**关注有礼，关注【老司机技术周报】，回复「2024」，领取 2024 及往年内参**
 
 ![](https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/qrcode_for_wechat.jpg?raw=true)
 
