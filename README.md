@@ -132,10 +132,10 @@
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/zoeGuo.png?raw=true'>
 </a>
 <a href='https://github.com/Dylan19Yang'>
-<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/DylanYang.jpeg?raw=true' width="50">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/DylanYang.png?raw=true'>
 </a>
 <a href='https://github.com/Kyle-Ye'>
-<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Kyle-Ye.jpeg?raw=true' width="50">
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Kyle-Ye.png?raw=true'>
 </a>
 
 </div>
