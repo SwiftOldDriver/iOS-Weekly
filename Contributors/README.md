@@ -255,3 +255,9 @@ https://github.com/100mango
 <img src="https://avatars.githubusercontent.com/u/5527453?v=4" width="150"/>
 
 老司机技术成员，目前就职于字节跳动，参与音乐相关客户端开发，业余喜欢看看番、打打游戏。
+
+### BluesJiang
+
+<img src="https://avatars.githubusercontent.com/u/15259706?v=4" width="150"/>
+
+iOS 开发者，老司机技术成员，目前就职于淘宝，负责淘宝原生基础架构。热衷于 Swift/SwiftUI 等基础技术领域。

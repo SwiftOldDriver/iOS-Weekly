@@ -137,6 +137,9 @@
 <a href='https://github.com/Kyle-Ye'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/Kyle-Ye.png?raw=true'>
 </a>
+<a href='https://github.com/BluesJiang'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/BluesJiang.jpeg?raw=true'>
+</a>
 
 </div>
 
