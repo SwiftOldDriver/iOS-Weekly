@@ -261,3 +261,9 @@ https://github.com/100mango
 <img src="https://avatars.githubusercontent.com/u/15259706?v=4" width="150"/>
 
 iOS 开发者，老司机技术成员，目前就职于淘宝，负责淘宝原生基础架构。热衷于 Swift/SwiftUI 等基础技术领域。
+
+### 阿权 / bq
+
+<img src="https://avatars.githubusercontent.com/u/13716794?v=4" width="150"/>
+
+老司机技术成员，base 广州，就职于字节剪映团队，喜欢音视频和图像处理，做过许多翻译和 WWDC 内参，热爱摇滚与爵士。喜欢文艺喜欢电影，曾经幻想诗与远方，却囿于昼夜、厨房与爱。
