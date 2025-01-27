@@ -267,3 +267,9 @@ iOS 开发者，老司机技术成员，目前就职于淘宝，负责淘宝原�
 <img src="https://avatars.githubusercontent.com/u/13716794?v=4" width="150"/>
 
 老司机技术成员，base 广州，就职于字节剪映团队，喜欢音视频和图像处理，做过许多翻译和 WWDC 内参，热爱摇滚与爵士。喜欢文艺喜欢电影，曾经幻想诗与远方，却囿于昼夜、厨房与爱。
+
+### zhangferry
+
+<img src="https://avatars.githubusercontent.com/u/13702445?v=4" width="150"/>
+
+老司机技术候补人员，目前在抖音基础技术团队从事代码分析相关工作。对 LLM、Stable Diffusion 有过短暂热爱，目前较大精力在带娃
