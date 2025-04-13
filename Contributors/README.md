@@ -273,3 +273,9 @@ iOS 开发者，老司机技术成员，目前就职于淘宝，负责淘宝原�
 <img src="https://avatars.githubusercontent.com/u/13702445?v=4" width="150"/>
 
 老司机技术成员，目前在抖音基础技术团队从事代码分析相关工作。对 LLM、Stable Diffusion 有过短暂热爱，目前较大精力在带娃。
+
+### David
+
+<img src="https://avatars.githubusercontent.com/u/26401347?v=4" width="150"/>
+
+老司机技术成员，目前从事 iOS Infra 相关工作，对跨平台技术比较感兴趣。喜欢摄影、跳舞，会点 Popping，为多上街舞大师课，现定居大阪。
