@@ -143,6 +143,9 @@
 <a href='https://github.com/bqlin'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/bq.png?raw=true'>
 </a>
+<a href='https://github.com/david-clang'>
+<img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/david.png?raw=true'>
+</a>
 
 </div>
 
