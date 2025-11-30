@@ -142,11 +142,13 @@
 </a>
 <a href='https://github.com/bqlin'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/bq.png?raw=true'>
+<a href='https://zhangferry.com'>
+<img src="https://avatars.githubusercontent.com/u/13702445?v=4" width="48">
+</a>
 </a>
 <a href='https://github.com/david-clang'>
 <img src='https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/author/David.png?raw=true'>
 </a>
-
 </div>
 
 #### 荣誉编辑
