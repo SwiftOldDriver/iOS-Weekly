@@ -1,0 +1,71 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - "Reports/**"
+      - "Posts/**"
+      - "Contributors/**"
+      - "assets/**"
+      - "docs/**"
+      - "scripts/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: scripts/package-lock.json
+
+      - name: Install build deps
+        run: npm ci --prefix scripts
+
+      - name: Build search & metadata index
+        run: node scripts/build-index.js
+
+      - name: Assemble _site
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          cp -R docs/. _site/
+          cp -R assets _site/assets
+          cp -R Reports Posts Contributors _site/
+          touch _site/.nojekyll
+          # do not ship raw npm install metadata
+          rm -rf _site/data/.git || true
+          ls -la _site | head -40
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
