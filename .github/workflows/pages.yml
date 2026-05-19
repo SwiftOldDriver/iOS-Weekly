@@ -12,6 +12,14 @@ on:
       - "scripts/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
+    inputs:
+      runner:
+        description: "选择运行机器（默认 self-hosted，避免 GitHub-hosted 排队）"
+        type: choice
+        options:
+          - self-hosted
+          - ubuntu-latest
+        default: self-hosted
 
 permissions:
   contents: read
@@ -24,7 +32,9 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # push 触发：默认走 self-hosted runner（LDD43LM69N）。
+    # 手动 workflow_dispatch 时可在 inputs.runner 选择 ubuntu-latest 作为兜底。
+    runs-on: ${{ inputs.runner == 'ubuntu-latest' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","LDD43LM69N"]') }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -45,6 +55,7 @@ jobs:
       - name: Assemble _site
         run: |
           set -euo pipefail
+          rm -rf _site
           mkdir -p _site
           cp -R docs/. _site/
           cp -R assets _site/assets
@@ -61,7 +72,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ${{ inputs.runner == 'ubuntu-latest' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","LDD43LM69N"]') }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
