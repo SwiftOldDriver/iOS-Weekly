@@ -41,6 +41,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # actions/upload-pages-artifact@v3 显式调用 `gtar`（GNU tar），macOS 默认只有 BSD `tar`，
+      # 这里把 Homebrew 路径写进 GITHUB_PATH 并校验 `gtar` 存在。
+      # 首次部署前请在这台 self-hosted runner 上执行: brew install gnu-tar
+      - name: Ensure GNU tar on PATH (macOS self-hosted)
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          for p in /opt/homebrew/bin /usr/local/bin; do
+            [ -x "$p/gtar" ] && echo "$p" >> "$GITHUB_PATH"
+          done
+          export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+          if ! command -v gtar >/dev/null; then
+            echo "::error::gtar not found. Run once on the runner host: brew install gnu-tar"
+            exit 1
+          fi
+          gtar --version | head -n 1
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
