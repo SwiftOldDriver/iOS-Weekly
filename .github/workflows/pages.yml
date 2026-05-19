@@ -34,7 +34,9 @@ jobs:
   build:
     # push 触发：默认走 self-hosted runner（LDD43LM69N）。
     # 手动 workflow_dispatch 时可在 inputs.runner 选择 ubuntu-latest 作为兜底。
-    runs-on: ${{ inputs.runner == 'ubuntu-latest' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","LDD43LM69N"]') }}
+    # 注意：runs-on 匹配的是 runner 的 label 而非 name；这里只用 "self-hosted"
+    # 通用 label 命中我们挂载到本仓库的 self-hosted runner。
+    runs-on: ${{ inputs.runner == 'ubuntu-latest' && 'ubuntu-latest' || 'self-hosted' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -72,7 +74,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ${{ inputs.runner == 'ubuntu-latest' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","LDD43LM69N"]') }}
+    runs-on: ${{ inputs.runner == 'ubuntu-latest' && 'ubuntu-latest' || 'self-hosted' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
