@@ -62,7 +62,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: npm
+          # 仅 GitHub-hosted runner 启用云端 npm cache。
+          # self-hosted 上 ~/.npm 已跨 job 持久化，云端 cache 反而易超时（见 #6 失败日志）。
+          cache: ${{ runner.environment == 'github-hosted' && 'npm' || '' }}
           cache-dependency-path: scripts/package-lock.json
 
       - name: Install build deps
