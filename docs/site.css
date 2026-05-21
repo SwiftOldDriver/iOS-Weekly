@@ -394,6 +394,82 @@ a:hover { color: var(--c-link-hover); }
     -webkit-box-orient: vertical;
 }
 
+/* ---------- feature card (WWDC 内参) ---------- */
+.app-feature {
+    background: #ffffff;
+    border: 1px solid #e6e8ee;
+    border-radius: 10px;
+    padding: 24px clamp(20px, 3.5vw, 32px);
+    box-shadow: 0 1px 2px rgba(38, 50, 79, 0.04), 0 4px 16px rgba(38, 50, 79, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.app-feature__lede {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #26324F;
+}
+.app-feature__lede strong {
+    color: #26324F;
+}
+.app-feature__quote {
+    margin: 0;
+    background: #f4f5f8;
+    border-left: 3px solid #ffb11b;
+    border-radius: 4px;
+    padding: 10px 14px;
+    color: #52699D;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.app-feature__meta {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7793;
+    line-height: 1.6;
+}
+.app-feature__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.app-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 999px;
+    border: 1px solid #e6e8ee;
+    background: #ffffff;
+    color: #26324F;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+.app-btn:hover {
+    transform: translateY(-1px);
+    border-color: #ffb11b;
+    color: #26324F;
+    box-shadow: 0 1px 2px rgba(38, 50, 79, 0.04), 0 4px 16px rgba(38, 50, 79, 0.06);
+    text-decoration: none;
+}
+.app-btn--primary {
+    background: #ffb11b;
+    border-color: #ffb11b;
+    color: #1a1a1a;
+}
+.app-btn--primary:hover {
+    background: #e09a0c;
+    border-color: #e09a0c;
+    color: #1a1a1a;
+}
+
 /* ---------- list (reports per year, posts) ---------- */
 .app-year {
     margin-bottom: 28px;

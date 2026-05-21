@@ -154,6 +154,22 @@ function renderHome() {
 
         <section class="app-section">
             <div class="app-section__head">
+                <h2 class="app-section__title">WWDC 内参</h2>
+                <a class="app-section__more" href="https://swiftolddriver.github.io/WWDC-InternalReference/" target="_blank" rel="noopener">查看 WWDC 内参 →</a>
+            </div>
+            <article class="app-feature">
+                <p class="app-feature__lede"><strong>WWDC 内参</strong> 系列是由「老司机技术」牵头组织的精品原创内容系列。已经做了几年了，口碑一直不错。得益于组建的审核团队和不断优化的创作流程，大家创作的内容都已经超越了视频本身的内容，非常有学习和参考意义。</p>
+                <blockquote class="app-feature__quote">双审核机制：一位审核从专业性角度看内容是否正确，另外一位审核从读者角度看知识是否正确引导。</blockquote>
+                <p class="app-feature__meta">仓库已脱敏开源，覆盖 WWDC 21 – 24 历年内参。</p>
+                <div class="app-feature__actions">
+                    <a class="app-btn app-btn--primary" href="https://swiftolddriver.github.io/WWDC-InternalReference/" target="_blank" rel="noopener">在线阅读 →</a>
+                    <a class="app-btn" href="https://github.com/SwiftOldDriver/WWDC-InternalReference" target="_blank" rel="noopener">开源仓库 ↗</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="app-section">
+            <div class="app-section__head">
                 <h2 class="app-section__title">精品文章</h2>
                 <a class="app-section__more" href="#/posts">全部 Posts →</a>
             </div>
