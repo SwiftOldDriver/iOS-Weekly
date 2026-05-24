@@ -1,0 +1,103 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - "Reports/**"
+      - "Posts/**"
+      - "Contributors/**"
+      - "assets/**"
+      - "docs/**"
+      - "scripts/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+    inputs:
+      runner:
+        description: "选择运行机器（默认 self-hosted，避免 GitHub-hosted 排队）"
+        type: choice
+        options:
+          - self-hosted
+          - ubuntu-latest
+        default: self-hosted
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # push 触发：默认走 self-hosted runner（LDD43LM69N）。
+    # 手动 workflow_dispatch 时可在 inputs.runner 选择 ubuntu-latest 作为兜底。
+    # 注意：runs-on 匹配的是 runner 的 label 而非 name；这里只用 "self-hosted"
+    # 通用 label 命中我们挂载到本仓库的 self-hosted runner。
+    runs-on: ${{ inputs.runner == 'ubuntu-latest' && 'ubuntu-latest' || 'self-hosted' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # actions/upload-pages-artifact@v3 显式调用 `gtar`（GNU tar），macOS 默认只有 BSD `tar`，
+      # 这里把 Homebrew 路径写进 GITHUB_PATH 并校验 `gtar` 存在。
+      # 首次部署前请在这台 self-hosted runner 上执行: brew install gnu-tar
+      - name: Ensure GNU tar on PATH (macOS self-hosted)
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          for p in /opt/homebrew/bin /usr/local/bin; do
+            [ -x "$p/gtar" ] && echo "$p" >> "$GITHUB_PATH"
+          done
+          export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+          if ! command -v gtar >/dev/null; then
+            echo "::error::gtar not found. Run once on the runner host: brew install gnu-tar"
+            exit 1
+          fi
+          gtar --version | head -n 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          # 仅 GitHub-hosted runner 启用云端 npm cache。
+          # self-hosted 上 ~/.npm 已跨 job 持久化，云端 cache 反而易超时（见 #6 失败日志）。
+          cache: ${{ runner.environment == 'github-hosted' && 'npm' || '' }}
+          cache-dependency-path: scripts/package-lock.json
+
+      - name: Install build deps
+        run: npm ci --prefix scripts
+
+      - name: Build search & metadata index
+        run: node scripts/build-index.js
+
+      - name: Assemble _site
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir -p _site
+          cp -R docs/. _site/
+          cp -R assets _site/assets
+          cp -R Reports Posts Contributors _site/
+          touch _site/.nojekyll
+          # do not ship raw npm install metadata
+          rm -rf _site/data/.git || true
+          ls -la _site | head -40
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ${{ inputs.runner == 'ubuntu-latest' && 'ubuntu-latest' || 'self-hosted' }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

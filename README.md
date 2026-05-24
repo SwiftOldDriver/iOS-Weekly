@@ -8,13 +8,17 @@
 
 你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 [Issues ](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 [Issues ](https://github.com/SwiftOldDriver/iOS-Weekly/issues) 提出。
 
-## 支持我们：[WWDC24 内参](https://xiaozhuanlan.com/wwdc23)
+我们也提供了[网页版本](https://swiftolddriver.github.io/iOS-Weekly/)供大家浏览。
 
-**WWDC24 内参** 目前已经更新了 21 篇内容，并且我们今年做出了一个重大改变，关注老司机技术公众号并回复 ``2024`` 可以免费领取，后续也会在公众号上定期推送对应内容。
+## [WWDC 内参](https://swiftolddriver.github.io/WWDC-InternalReference/)
 
-**WWDC 内参** 系列是由「老司机技术」牵头组织的精品原创内容系列。已经做了几年了，口碑一直不错。和往年不同，今年几乎没有脱水稿了，得益于组建的审核团队和不断优化的创作流程，大家创作的内容都已经超越了视频本身的内容，非常有学习和参考意义。
+**WWDC 内参** 系列是由「老司机技术」牵头组织的精品原创内容系列。已经做了几年了，口碑一直不错。得益于组建的审核团队和不断优化的创作流程，大家创作的内容都已经超越了视频本身的内容，非常有学习和参考意义。
 
 > 双审核机制：一位审核从专业性角度看内容是否正确，另外一位审核从读者角度看知识是否正确引导。
+
+目前我们已经将仓库脱敏后，开源成 [publish repo](https://github.com/SwiftOldDriver/WWDC-InternalReference) ，大家可以看到历史上 WWDC 21 - 24 的所有内参内容。唯一的遗憾是由于仓库迁移，PR 的评论和讨论暂时还无法分享给大家，但所有作者和审核老师的 commit 信息都保留在了仓库中。
+
+自从某平台失去维护后，我们的内参终于以这种新的方式与大家见面。
 
 ## 订阅周报
 
