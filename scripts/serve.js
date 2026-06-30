@@ -82,12 +82,19 @@ function serve() {
                 return;
             }
             const final = stat.isDirectory() ? path.join(safe, "index.html") : safe;
-            const data = await fsp.readFile(final);
+            
             res.writeHead(200, {
                 "content-type": MIME[path.extname(final).toLowerCase()] || "application/octet-stream",
                 "cache-control": "no-cache",
             });
-            res.end(data);
+            
+            const stream = fs.createReadStream(final);
+            stream.pipe(res);
+            stream.on('error', (err) => {
+                if (!res.writableEnded) {
+                    res.destroy();
+                }
+            });
         } catch (err) {
             res.writeHead(500, { "content-type": "text/plain" }).end(String(err));
         }
