@@ -14,13 +14,31 @@ const SEARCH_INPUT = document.getElementById("app-search-input");
 const SEARCH_PANEL = document.getElementById("app-search-panel");
 const NAV_LINKS = document.querySelectorAll(".app-nav a[data-route]");
 const REPO_BASE = "https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/";
+const REPO_IMAGE_BASES = [
+    REPO_BASE,
+    "https://github.com/SwiftOldDriver/iOS-Weekly/raw/master/",
+    "https://raw.githubusercontent.com/SwiftOldDriver/iOS-Weekly/master/",
+];
 
 marked.setOptions({ gfm: true, breaks: false });
 
-/* page.css (designed for the "Nice" WeChat editor) styles `#nice hN .content`
- * for the colored accents. Wrap heading inner text so those rules light up. */
 marked.use({
+    walkTokens(token) {
+        if (token.type !== "image") return;
+
+        const { href } = token;
+        // Legacy reports use a relative path from before the year directories.
+        if (href.startsWith("../assets/")) {
+            token.href = href.slice("../".length);
+            return;
+        }
+
+        // Pages already ships these images under its own assets directory.
+        const base = REPO_IMAGE_BASES.find((base) => href.startsWith(`${base}assets/`));
+        if (base) token.href = href.slice(base.length).replace(/\?raw=true$/, "");
+    },
     renderer: {
+        // page.css uses .content to apply colored accents to headings.
         heading(text, level) {
             return `<h${level}><span class="content">${text}</span></h${level}>\n`;
         },
