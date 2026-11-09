@@ -10,6 +10,10 @@
 
 我们也提供了[网页版本](https://swiftolddriver.github.io/iOS-Weekly/)供大家浏览。
 
+维护网页时，在仓库根目录运行 `npm ci --prefix scripts` 和 `npm run build:dev --prefix scripts`，然后打开 `http://localhost:8080/`。网页构建需要 Node.js 20 和 `cwebp`（macOS 可用 `brew install webp`，Ubuntu 可用 `sudo apt-get install webp`）。`npm run build --prefix scripts` 生成 `_site/`，`npm test --prefix scripts` 检查生成的链接和搜索。
+
+周报模板标题下的 `<!-- site: draft -->` 会让该期跳过网页构建，包括首页、归档、搜索和正文页面。发布前移除标记，合入后网页随下一次 GitHub Pages 部署更新。
+
 ## [WWDC 内参](https://swiftolddriver.github.io/WWDC-InternalReference/)
 
 **WWDC 内参** 系列是由「老司机技术」牵头组织的精品原创内容系列。已经做了几年了，口碑一直不错。得益于组建的审核团队和不断优化的创作流程，大家创作的内容都已经超越了视频本身的内容，非常有学习和参考意义。

@@ -1,45 +1,28 @@
-/**
- * Shared tokenizer for MiniSearch indexing & querying.
- *
- * Splits on whitespace + punctuation; for CJK runs emits unigrams + bigrams,
- * which lets MiniSearch find Chinese substrings without a dictionary.
- *
- * NOTE: This file is loaded BOTH by:
- *   - the build script (scripts/build-index.js, copy at scripts/tokenize.js)
- *   - the browser app (docs/app.js)
- * Keep it dependency-free.
- */
+// Keep Latin identifiers intact next to CJK text. For CJK, index both single
+// characters and pairs so readers can search substrings without a dictionary.
+const CJK_RUN = /([\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]+)/u;
+const WORD = /c(?:\+\+|#)\d*|[\p{L}\p{M}\p{N}_]+/gu;
+
+export function searchWords(text, cjkBigrams = false) {
+    const tokens = [];
+    const runs = String(text ?? "").normalize("NFKC").toLowerCase().split(CJK_RUN);
+    for (const [index, run] of runs.entries()) {
+        if (!run) continue;
+        if (index % 2 === 0) {
+            tokens.push(...(run.match(WORD) || []));
+        } else if (cjkBigrams) {
+            const characters = [...run];
+            for (const [offset, character] of characters.entries()) {
+                tokens.push(character);
+                if (offset + 1 < characters.length) tokens.push(character + characters[offset + 1]);
+            }
+        } else {
+            tokens.push(run);
+        }
+    }
+    return tokens;
+}
 
 export function tokenizeCJK(text) {
-    if (!text) return [];
-    const out = [];
-    const parts = String(text).split(/[\s\p{P}\p{S}]+/u).filter(Boolean);
-    const cjkRe = /\p{Script=Han}|\p{Script=Hiragana}|\p{Script=Katakana}/u;
-    for (const part of parts) {
-        if (/^[\p{ASCII}]+$/u.test(part)) {
-            out.push(part.toLowerCase());
-            continue;
-        }
-        const chars = [...part];
-        let buf = "";
-        const flush = () => {
-            if (!buf) return;
-            const cs = [...buf];
-            for (let i = 0; i < cs.length; i++) {
-                out.push(cs[i]);
-                if (i + 1 < cs.length) out.push(cs[i] + cs[i + 1]);
-            }
-            buf = "";
-        };
-        for (const ch of chars) {
-            if (cjkRe.test(ch)) {
-                buf += ch;
-            } else {
-                flush();
-                if (ch.trim()) out.push(ch.toLowerCase());
-            }
-        }
-        flush();
-    }
-    return out;
+    return searchWords(text, true);
 }

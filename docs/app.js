@@ -1,639 +1,328 @@
-/**
- * iOS Weekly site SPA
- * - hash-based router
- * - lazy-loaded full-text search via MiniSearch
- * - markdown rendering via marked
- * - reuses assets/page.css by wrapping content in <article id="nice">
- */
+import { buildPreviewSearch, highlightPattern } from "./search-core.mjs";
 
-import { marked } from "./vendor/marked.esm.js";
-import { tokenizeCJK } from "./vendor/tokenize.mjs";
+const SITE_ROOT = new URL("./", import.meta.url);
+const QUICK_LIMIT = 8;
+const LABELS = { report: "周报", post: "文章", contributor: "贡献者" };
+const input = document.querySelector("#app-search-input");
+const form = input?.form;
+const panel = document.querySelector("#app-search-panel");
+const status = document.querySelector("#app-search-status");
+const more = document.querySelector("#app-search-more");
 
-const VIEW = document.getElementById("app-view");
-const SEARCH_INPUT = document.getElementById("app-search-input");
-const SEARCH_PANEL = document.getElementById("app-search-panel");
-const NAV_LINKS = document.querySelectorAll(".app-nav a[data-route]");
-const REPO_BASE = "https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/";
-const REPO_IMAGE_BASES = [
-    REPO_BASE,
-    "https://github.com/SwiftOldDriver/iOS-Weekly/raw/master/",
-    "https://raw.githubusercontent.com/SwiftOldDriver/iOS-Weekly/master/",
-];
+let previewPromise;
+let worker;
+let nextRequest = 0;
+const requests = new Map();
 
-marked.setOptions({ gfm: true, breaks: false });
+function loadPreview() {
+    previewPromise ??= fetch(new URL("data/search-preview.json", SITE_ROOT))
+        .then((response) => {
+            if (!response.ok) throw new Error(`Search preview: ${response.status}`);
+            return response.json();
+        })
+        .then(buildPreviewSearch)
+        .catch((error) => {
+            previewPromise = undefined;
+            throw error;
+        });
+    return previewPromise;
+}
 
-marked.use({
-    walkTokens(token) {
-        if (token.type !== "image") return;
+function makeWorker() {
+    const instance = new Worker(new URL("search-worker.js", SITE_ROOT), { type: "module" });
+    instance.addEventListener("message", ({ data }) => {
+        const request = requests.get(data.scope);
+        if (request?.id !== data.id) return;
+        requests.delete(data.scope);
+        request.resolve(data.failed ? null : data);
+    });
+    const onError = () => {
+        instance.terminate();
+        if (worker !== instance) return;
+        worker = undefined;
+        for (const request of requests.values()) request.resolve(null);
+        requests.clear();
+    };
+    instance.addEventListener("error", onError);
+    instance.addEventListener("messageerror", onError);
+    return instance;
+}
 
-        const { href } = token;
-        // Legacy reports use a relative path from before the year directories.
-        if (href.startsWith("../assets/")) {
-            token.href = href.slice("../".length);
+function cancelSearch(scope) {
+    const request = requests.get(scope);
+    if (!request) return;
+    requests.delete(scope);
+    request.resolve(null);
+    worker?.postMessage({ scope, id: ++nextRequest });
+}
+
+function requestFullSearch(scope, query, limit) {
+    cancelSearch(scope);
+    return new Promise((resolve) => {
+        try {
+            worker ??= makeWorker();
+            const id = ++nextRequest;
+            requests.set(scope, { id, resolve });
+            worker.postMessage({ scope, id, query, limit });
+        } catch {
+            requests.delete(scope);
+            resolve(null);
+        }
+    });
+}
+
+async function search(scope, query, limit, onPreview) {
+    let finished = false;
+    const preview = loadPreview().then((run) => {
+        if (finished) return null;
+        const result = run(query, limit);
+        onPreview(result);
+        return result;
+    }).catch(() => null);
+    const full = await requestFullSearch(scope, query, limit);
+    if (full) {
+        finished = true;
+        return { ...full, mode: "full" };
+    }
+    const fallback = await preview;
+    return fallback ? { ...fallback, mode: "preview" } : { total: 0, results: [], mode: "failed" };
+}
+
+function resultLink(result, query) {
+    const link = makeElement("a", "app-search__result");
+    link.href = new URL(result.href, SITE_ROOT);
+    const head = makeElement("span", "app-search__result-head");
+    const badge = makeElement("span", `app-badge app-badge--${result.type}`, LABELS[result.type]);
+    const title = makeElement("span", "app-search__result-title");
+    const issue = result.type === "report" && result.id.match(/^r-(\d+)-/);
+    const label = issue ? `第 ${Number(issue[1])} 期` : result.title;
+    appendHighlight(title, label, query, result.matchedTerms);
+    head.append(badge, title);
+    if (result.date) {
+        const date = makeElement("time", "app-search__result-date", result.date);
+        date.dateTime = result.date;
+        head.append(date);
+    }
+    link.append(head);
+    if (result.snippet) {
+        const snippet = makeElement("span", "app-search__result-snippet");
+        appendHighlight(snippet, result.snippet, query, result.matchedTerms);
+        link.append(snippet);
+    }
+    return link;
+}
+
+function makeElement(tag, className, text) {
+    const element = document.createElement(tag);
+    if (className) element.className = className;
+    if (text) element.textContent = text;
+    return element;
+}
+
+function appendHighlight(element, text, query, terms) {
+    const pattern = highlightPattern(query, terms, "giu");
+    let offset = 0;
+    if (pattern) {
+        for (const match of text.matchAll(pattern)) {
+            element.append(text.slice(offset, match.index), makeElement("mark", "", match[0]));
+            offset = match.index + match[0].length;
+        }
+    }
+    element.append(text.slice(offset));
+}
+
+function cleanQuery(value) {
+    return Array.from((value ?? "").trim()).slice(0, 120).join("");
+}
+
+function resultMessage({ total, mode }) {
+    if (mode === "failed") return "搜索加载失败，请稍后重试。";
+    if (mode === "preview") return `全文搜索暂不可用。标题和栏目匹配 ${total} 条。`;
+    return total ? `找到 ${total} 条结果` : "没有找到匹配结果";
+}
+
+function installQuickSearch() {
+    let revision = 0;
+    let timer;
+    let options = [];
+    let active = -1;
+    let composing = false;
+    let composingEnter = false;
+    const count = makeElement("span", "app-search__count");
+    const all = makeElement("a", "app-search__all", "查看全部");
+    more.replaceChildren(count, all);
+
+    function showMore(message, query) {
+        status.textContent = message;
+        count.textContent = message;
+        const resultsUrl = new URL("search/", SITE_ROOT);
+        resultsUrl.searchParams.set("q", query);
+        all.href = resultsUrl;
+        more.hidden = false;
+    }
+
+    function setActive(index, scroll = true) {
+        active = index;
+        for (const [position, option] of options.entries()) {
+            const selected = position === index;
+            option.classList.toggle("is-active", selected);
+            option.setAttribute("aria-selected", String(selected));
+        }
+        const option = options[active];
+        if (option) {
+            input.setAttribute("aria-activedescendant", option.id);
+            if (scroll) option.scrollIntoView({ block: "nearest" });
+        } else {
+            input.removeAttribute("aria-activedescendant");
+        }
+    }
+
+    function renderOptions(results, query) {
+        const selected = options[active]?.href;
+        options = results.map((result, index) => {
+            const option = resultLink(result, query);
+            option.id = `app-search-option-${index}`;
+            option.tabIndex = -1;
+            option.setAttribute("role", "option");
+            return option;
+        });
+        panel.replaceChildren(...options);
+        panel.hidden = !options.length;
+        input.setAttribute("aria-expanded", String(options.length > 0));
+        setActive(options.findIndex((option) => option.href === selected), false);
+    }
+
+    function dismiss() {
+        revision++;
+        clearTimeout(timer);
+        cancelSearch("popup");
+        renderOptions([], "");
+        more.hidden = true;
+        status.textContent = "";
+    }
+
+    function schedule() {
+        dismiss();
+        const query = cleanQuery(input.value);
+        if (!query || composing || document.activeElement !== input) return;
+        const current = revision;
+        showMore("正在搜索…", query);
+        timer = setTimeout(async () => {
+            const result = await search("popup", query, QUICK_LIMIT, (preview) => {
+                if (current !== revision) return;
+                renderOptions(preview.results, query);
+                showMore(`标题和栏目匹配 ${preview.total} 条，正在搜索全文…`, query);
+            });
+            if (current !== revision) return;
+            renderOptions(result.results, query);
+            showMore(resultMessage(result), query);
+        }, 120);
+    }
+
+    input.addEventListener("focus", schedule);
+    input.addEventListener("input", (event) => {
+        if (!event.isComposing && !composing) schedule();
+    });
+    input.addEventListener("compositionstart", () => {
+        composing = true;
+        dismiss();
+    });
+    input.addEventListener("compositionend", () => {
+        composing = false;
+        schedule();
+    });
+    input.addEventListener("keydown", (event) => {
+        if (composing || event.isComposing || event.keyCode === 229) {
+            if (event.key === "Enter") {
+                composingEnter = true;
+                setTimeout(() => { composingEnter = false; }, 0);
+            }
             return;
         }
-
-        // Pages already ships these images under its own assets directory.
-        const base = REPO_IMAGE_BASES.find((base) => href.startsWith(`${base}assets/`));
-        if (base) token.href = href.slice(base.length).replace(/\?raw=true$/, "");
-    },
-    renderer: {
-        // page.css uses .content to apply colored accents to headings.
-        heading(text, level) {
-            return `<h${level}><span class="content">${text}</span></h${level}>\n`;
-        },
-    },
-});
-
-const state = {
-    index: null,        // full index.json
-    byId: new Map(),    // id -> entry
-    byType: { report: [], post: [], contributor: [] },
-    yearGroups: [],     // [{ year, items: [] }]
-    docCache: new Map(), // path -> rendered html
-    miniSearch: null,
-    searchLoading: null, // in-flight promise
-};
-
-const router = createRouter([
-    { path: /^\/?$/, render: renderHome, name: "home" },
-    { path: /^\/reports\/?$/, render: renderReports, name: "/reports" },
-    { path: /^\/posts\/?$/, render: renderPosts, name: "/posts" },
-    { path: /^\/contributors\/?$/, render: renderContributors, name: "/contributors" },
-    { path: /^\/d\/(.+)$/, render: (m) => renderDetail(decodeURIComponent(m[1])) },
-]);
-
-bootstrap();
-
-async function bootstrap() {
-    try {
-        const res = await fetch("data/index.json", { cache: "default" });
-        if (!res.ok) throw new Error(`index.json HTTP ${res.status}`);
-        const data = await res.json();
-        ingest(data);
-        window.addEventListener("hashchange", router.handle);
-        router.handle();
-        installSearchHandlers();
-        installShortcuts();
-    } catch (err) {
-        VIEW.innerHTML = `<div class="app-empty">索引加载失败：${escapeHtml(err.message)}</div>`;
-        console.error(err);
-    }
-}
-
-function ingest(data) {
-    state.index = data;
-    for (const item of data.items) {
-        state.byId.set(item.id, item);
-        if (state.byType[item.type]) state.byType[item.type].push(item);
-    }
-    state.byType.report.sort((a, b) => (b.issue || 0) - (a.issue || 0));
-    state.byType.post.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-
-    const years = new Map();
-    for (const r of state.byType.report) {
-        const y = r.year || "其他";
-        if (!years.has(y)) years.set(y, []);
-        years.get(y).push(r);
-    }
-    state.yearGroups = [...years.entries()]
-        .map(([year, items]) => ({ year, items }))
-        .sort((a, b) => (b.year || 0) - (a.year || 0));
-}
-
-/* =====================================================================
- * Router
- * ===================================================================== */
-function createRouter(routes) {
-    function parseHash() {
-        const h = location.hash || "#/";
-        return h.replace(/^#/, "");
-    }
-    async function handle() {
-        const path = parseHash();
-        for (const r of routes) {
-            const m = path.match(r.path);
-            if (m) {
-                highlightNav(r.name);
-                VIEW.innerHTML = `<div class="app-loading" aria-live="polite">载入中…</div>`;
-                try {
-                    await r.render(m);
-                    VIEW.scrollTop = 0;
-                    document.getElementById("main").focus({ preventScroll: true });
-                    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
-                } catch (err) {
-                    console.error(err);
-                    VIEW.innerHTML = `<div class="app-empty">加载失败：${escapeHtml(err.message)}</div>`;
-                }
+        if (event.key === "Escape" && !more.hidden) {
+            event.preventDefault();
+            dismiss();
+        } else if (options.length && (event.key === "ArrowDown" || event.key === "ArrowUp")) {
+            event.preventDefault();
+            const next = event.key === "ArrowDown" ? active + 1 : active < 0 ? options.length - 1 : active - 1;
+            setActive((next + options.length) % options.length);
+        } else if (event.key === "Enter" && options[active]) {
+            event.preventDefault();
+            const href = options[active].href;
+            dismiss();
+            window.location.assign(href);
+        }
+    });
+    form.addEventListener("submit", (event) => {
+        const query = cleanQuery(input.value);
+        if (composing || composingEnter || !query) {
+            event.preventDefault();
+            return;
+        }
+        input.value = query;
+        dismiss();
+    });
+    form.addEventListener("focusout", (event) => {
+        if (!form.contains(event.relatedTarget)) dismiss();
+    });
+    document.addEventListener("pointerdown", (event) => {
+        if (!form.contains(event.target) && !more.hidden) dismiss();
+    });
+    for (const container of [panel, more]) {
+        container.addEventListener("mousedown", (event) => {
+            // Keep focus on the combobox until a pointer selection is activated.
+            if (event.button === 0 && event.target.closest("a[href]")) event.preventDefault();
+        });
+        container.addEventListener("click", (event) => {
+            const link = event.target.closest("a[href]");
+            if (!link || event.defaultPrevented) return;
+            if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) {
+                setTimeout(dismiss, 0);
                 return;
             }
-        }
-        VIEW.innerHTML = `<div class="app-empty">页面不存在 — <a href="#/">回到首页</a></div>`;
-    }
-    return { handle };
-}
-
-function highlightNav(name) {
-    NAV_LINKS.forEach((a) => {
-        a.classList.toggle("is-active", a.dataset.route === name);
-    });
-}
-
-/* =====================================================================
- * Views
- * ===================================================================== */
-function renderHome() {
-    const reports = state.byType.report.slice(0, 8);
-    const posts = state.byType.post;
-    const contributors = state.byType.contributor.slice(0, 8);
-    const stats = state.index.stats || {};
-
-    const html = `
-        <section class="app-hero">
-            <h1 class="app-hero__title">iOS 开发者的精品周报检索站</h1>
-            <p class="app-hero__sub">收录 ${stats.reports || 0} 期老司机 iOS 周报、${stats.posts || 0} 篇精品文章与 ${stats.contributors || 0} 位贡献者，支持全文搜索（按 <kbd>/</kbd> 快速聚焦）。</p>
-            <div class="app-hero__stats">
-                <div><strong>${stats.reports || 0}</strong> Reports</div>
-                <div><strong>${stats.posts || 0}</strong> Posts</div>
-                <div><strong>${stats.contributors || 0}</strong> Contributors</div>
-                ${stats.builtAt ? `<div><strong>${stats.builtAt.slice(0, 10)}</strong> 索引更新</div>` : ""}
-            </div>
-        </section>
-
-        <section class="app-section">
-            <div class="app-section__head">
-                <h2 class="app-section__title">最近周报</h2>
-                <a class="app-section__more" href="#/reports">全部 Reports →</a>
-            </div>
-            <div class="app-grid">
-                ${reports.map(cardReport).join("")}
-            </div>
-        </section>
-
-        <section class="app-section">
-            <div class="app-section__head">
-                <h2 class="app-section__title">WWDC 内参</h2>
-                <a class="app-section__more" href="https://swiftolddriver.github.io/WWDC-InternalReference/" target="_blank" rel="noopener">查看 WWDC 内参 →</a>
-            </div>
-            <article class="app-feature">
-                <p class="app-feature__lede"><strong>WWDC 内参</strong> 系列是由「老司机技术」牵头组织的精品原创内容系列。已经做了几年了，口碑一直不错。得益于组建的审核团队和不断优化的创作流程，大家创作的内容都已经超越了视频本身的内容，非常有学习和参考意义。</p>
-                <blockquote class="app-feature__quote">双审核机制：一位审核从专业性角度看内容是否正确，另外一位审核从读者角度看知识是否正确引导。</blockquote>
-                <p class="app-feature__meta">仓库已脱敏开源，覆盖 WWDC 21 – 24 历年内参。</p>
-                <div class="app-feature__actions">
-                    <a class="app-btn app-btn--primary" href="https://swiftolddriver.github.io/WWDC-InternalReference/" target="_blank" rel="noopener">在线阅读 →</a>
-                    <a class="app-btn" href="https://github.com/SwiftOldDriver/WWDC-InternalReference" target="_blank" rel="noopener">开源仓库 ↗</a>
-                </div>
-            </article>
-        </section>
-
-        <section class="app-section">
-            <div class="app-section__head">
-                <h2 class="app-section__title">精品文章</h2>
-                <a class="app-section__more" href="#/posts">全部 Posts →</a>
-            </div>
-            <div class="app-grid">
-                ${posts.map(cardPost).join("")}
-            </div>
-        </section>
-
-        <section class="app-section">
-            <div class="app-section__head">
-                <h2 class="app-section__title">部分贡献者</h2>
-                <a class="app-section__more" href="#/contributors">全部 Contributors →</a>
-            </div>
-            <div class="app-contributors">
-                ${contributors.map(cardContributor).join("")}
-            </div>
-        </section>
-    `;
-    VIEW.innerHTML = html;
-}
-
-function renderReports() {
-    const html = `
-        <section class="app-section">
-            <div class="app-section__head">
-                <h2 class="app-section__title">Reports（${state.byType.report.length} 期）</h2>
-            </div>
-            ${state.yearGroups.map(renderYearGroup).join("")}
-        </section>
-    `;
-    VIEW.innerHTML = html;
-
-    VIEW.querySelectorAll(".app-year__head").forEach((btn) => {
-        btn.addEventListener("click", () => {
-            const yr = btn.closest(".app-year");
-            yr.dataset.collapsed = yr.dataset.collapsed === "true" ? "false" : "true";
+            event.preventDefault();
+            const href = link.href;
+            dismiss();
+            window.location.assign(href);
         });
+    }
+    window.addEventListener("pagehide", dismiss);
+    document.addEventListener("keydown", (event) => {
+        if (event.key !== "/" || event.isComposing || event.altKey || event.ctrlKey || event.metaKey) return;
+        if (event.target.closest?.("input, textarea, select, [contenteditable]:not([contenteditable='false'])")) return;
+        event.preventDefault();
+        input.focus();
+        input.select();
     });
 }
 
-function renderYearGroup(group) {
-    const collapsed = group.year < (state.yearGroups[0]?.year || 0) - 1;
-    return `
-        <section class="app-year" data-collapsed="${collapsed}">
-            <button class="app-year__head" type="button">
-                <span>${escapeHtml(String(group.year))}</span>
-                <span class="app-year__count">${group.items.length} 期</span>
-            </button>
-            <ul class="app-year__body">
-                ${group.items.map((it) => `
-                    <li>
-                        <a class="app-row" href="#/d/${encodeURIComponent(it.id)}" title="${escapeHtml(it.title)}">
-                            <span class="app-row__issue">#${it.issue ?? "—"}</span>
-                            <span class="app-row__title">${escapeHtml(reportShortTitle(it))}</span>
-                            <span class="app-row__date">${escapeHtml(it.date || "")}</span>
-                        </a>
-                    </li>`).join("")}
-            </ul>
-        </section>
-    `;
-}
-
-function renderPosts() {
-    const html = `
-        <section class="app-section">
-            <div class="app-section__head">
-                <h2 class="app-section__title">Posts（${state.byType.post.length} 篇）</h2>
-            </div>
-            <div class="app-grid">
-                ${state.byType.post.map(cardPost).join("")}
-            </div>
-        </section>
-    `;
-    VIEW.innerHTML = html;
-}
-
-function renderContributors() {
-    const html = `
-        <section class="app-section">
-            <div class="app-section__head">
-                <h2 class="app-section__title">Contributors（${state.byType.contributor.length} 位）</h2>
-            </div>
-            <div class="app-contributors">
-                ${state.byType.contributor.map(cardContributor).join("")}
-            </div>
-        </section>
-    `;
-    VIEW.innerHTML = html;
-}
-
-async function renderDetail(id) {
-    const item = state.byId.get(id);
-    if (!item) {
-        VIEW.innerHTML = `<div class="app-empty">未找到内容 — <a href="#/">回到首页</a></div>`;
+async function showSearchPage() {
+    const list = document.querySelector("#app-search-results");
+    const message = document.querySelector("#app-search-results-status");
+    if (!list || !message) return;
+    const query = cleanQuery(new URLSearchParams(window.location.search).get("q"));
+    if (!query) {
+        message.textContent = "输入期号、关键词或技术标识符开始搜索。";
         return;
     }
+    if (input) input.value = query;
 
-    const head = `
-        <article class="app-detail">
-            <a class="app-detail__back" href="${backHref(item)}">返回${typeLabel(item.type)}列表</a>
-            <div class="app-detail__meta">
-                <span class="app-badge app-badge--${item.type}">${typeLabel(item.type)}</span>
-                ${item.date ? `<span>${escapeHtml(item.date)}</span>` : ""}
-                ${item.path ? `<a href="${REPO_BASE}${encodePath(item.path)}" target="_blank" rel="noopener">在 GitHub 查看源文件 ↗</a>` : ""}
-            </div>
-            <div id="app-detail-body">${renderDetailBody(item)}</div>
-        </article>
-    `;
-    VIEW.innerHTML = head;
-
-    const body = document.getElementById("app-detail-body");
-    try {
-        const html = await fetchAndRender(item);
-        body.innerHTML = `<div id="nice">${html}</div>`;
-        applyExternalLinks(body);
-        applyInternalAnchors(body);
-    } catch (err) {
-        body.innerHTML = `<div class="app-empty">内容加载失败：${escapeHtml(err.message)}</div>`;
-    }
-}
-
-function renderDetailBody(item) {
-    if (item.type === "contributor" && item.body) {
-        try {
-            return `<div id="nice">${marked.parse(item.body)}</div>`;
-        } catch {
-            // fall through to fetch path
-        }
-    }
-    return `<div class="app-loading">载入正文…</div>`;
-}
-
-async function fetchAndRender(item) {
-    if (state.docCache.has(item.id)) return state.docCache.get(item.id);
-
-    if (item.type === "contributor" && item.body) {
-        const html = marked.parse(item.body);
-        state.docCache.set(item.id, html);
-        return html;
-    }
-
-    const url = item.url || encodePath(item.path);
-    const res = await fetch(url, { cache: "default" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const md = await res.text();
-    const html = marked.parse(md);
-    state.docCache.set(item.id, html);
-    if (state.docCache.size > 12) {
-        const firstKey = state.docCache.keys().next().value;
-        state.docCache.delete(firstKey);
-    }
-    return html;
-}
-
-/* =====================================================================
- * Cards
- * ===================================================================== */
-function cardReport(it) {
-    return `
-        <a class="app-card" href="#/d/${encodeURIComponent(it.id)}">
-            <div class="app-card__meta">
-                <span class="app-badge app-badge--report">周报</span>
-                <span>#${it.issue ?? "—"}</span>
-                <span>·</span>
-                <span>${escapeHtml(it.date || "")}</span>
-            </div>
-            <h3 class="app-card__title">${escapeHtml(reportShortTitle(it))}</h3>
-            <p class="app-card__excerpt">${escapeHtml(it.excerpt || "")}</p>
-        </a>
-    `;
-}
-
-function cardPost(it) {
-    return `
-        <a class="app-card" href="#/d/${encodeURIComponent(it.id)}">
-            <div class="app-card__meta">
-                <span class="app-badge app-badge--post">文章</span>
-                ${it.date ? `<span>${escapeHtml(it.date)}</span>` : ""}
-            </div>
-            <h3 class="app-card__title">${escapeHtml(it.title)}</h3>
-            <p class="app-card__excerpt">${escapeHtml(it.excerpt || "")}</p>
-        </a>
-    `;
-}
-
-function cardContributor(it) {
-    const avatar = it.avatar || "assets/ios-weekly-avatar-new.png";
-    return `
-        <a class="app-contributor" href="#/d/${encodeURIComponent(it.id)}">
-            <img class="app-contributor__avatar" src="${escapeAttr(avatar)}" alt="" loading="lazy" referrerpolicy="no-referrer" />
-            <h3 class="app-contributor__name">${escapeHtml(it.title)}</h3>
-            <p class="app-contributor__bio">${escapeHtml(it.excerpt || "")}</p>
-        </a>
-    `;
-}
-
-/* =====================================================================
- * Search
- * ===================================================================== */
-function installSearchHandlers() {
-    let activeIdx = -1;
-    let lastResults = [];
-    const debounced = debounce(runSearch, 120);
-
-    SEARCH_INPUT.addEventListener("focus", () => {
-        ensureSearchLoaded();
-        if (SEARCH_INPUT.value.trim()) showPanel();
-    });
-    SEARCH_INPUT.addEventListener("input", () => {
-        debounced(SEARCH_INPUT.value);
-    });
-    SEARCH_INPUT.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-            SEARCH_INPUT.blur();
-            hidePanel();
-            return;
-        }
-        if (!lastResults.length) return;
-        if (e.key === "ArrowDown") {
-            e.preventDefault();
-            activeIdx = (activeIdx + 1) % lastResults.length;
-            updateActive();
-        } else if (e.key === "ArrowUp") {
-            e.preventDefault();
-            activeIdx = (activeIdx - 1 + lastResults.length) % lastResults.length;
-            updateActive();
-        } else if (e.key === "Enter") {
-            e.preventDefault();
-            const pick = lastResults[Math.max(0, activeIdx)];
-            if (pick) {
-                location.hash = `#/d/${encodeURIComponent(pick.id)}`;
-                SEARCH_INPUT.value = "";
-                hidePanel();
-                SEARCH_INPUT.blur();
-            }
-        }
-    });
-
-    document.addEventListener("click", (e) => {
-        if (!e.target.closest(".app-search")) hidePanel();
-    });
-
-    function updateActive() {
-        SEARCH_PANEL.querySelectorAll(".app-search__result").forEach((el, i) => {
-            el.classList.toggle("is-active", i === activeIdx);
-            if (i === activeIdx) el.scrollIntoView({ block: "nearest" });
+    function update(results, text) {
+        const rows = results.map((result) => {
+            const row = document.createElement("li");
+            row.append(resultLink(result, query));
+            return row;
         });
+        list.replaceChildren(...rows);
+        message.textContent = `“${query}”：${text}`;
     }
 
-    async function runSearch(query) {
-        const q = query.trim();
-        if (!q) {
-            lastResults = [];
-            activeIdx = -1;
-            hidePanel();
-            return;
-        }
-        showPanel(`<div class="app-search__hint">搜索中…</div>`);
-        const results = await search(q);
-        lastResults = results;
-        activeIdx = results.length ? 0 : -1;
-        if (!results.length) {
-            showPanel(`<div class="app-search__hint">没有匹配结果。</div>`);
-            return;
-        }
-        showPanel(results.map((r, i) => renderResult(r, i === 0, q)).join(""));
-    }
-
-    function showPanel(content) {
-        if (typeof content === "string") SEARCH_PANEL.innerHTML = content;
-        SEARCH_PANEL.hidden = false;
-        SEARCH_INPUT.setAttribute("aria-expanded", "true");
-    }
-    function hidePanel() {
-        SEARCH_PANEL.hidden = true;
-        SEARCH_INPUT.setAttribute("aria-expanded", "false");
-    }
-}
-
-function renderResult(r, active, query) {
-    const item = state.byId.get(r.id);
-    if (!item) return "";
-    const snippet = makeSnippet(item, query);
-    return `
-        <a class="app-search__result ${active ? "is-active" : ""}"
-           href="#/d/${encodeURIComponent(r.id)}"
-           role="option">
-            <div class="app-search__result-head">
-                <span class="app-badge app-badge--${item.type}">${typeLabel(item.type)}</span>
-                <span>${escapeHtml(item.title)}</span>
-                ${item.date ? `<span style="color:var(--c-text-muted);font-weight:400;font-size:12px">· ${escapeHtml(item.date)}</span>` : ""}
-            </div>
-            <div class="app-search__result-snippet">${snippet}</div>
-        </a>
-    `;
-}
-
-function makeSnippet(item, query) {
-    const haystack = [item.excerpt || "", item.body || "", (item.sections || []).map((s) => `${s.heading || ""} ${s.summary || ""}`).join(" ")].join(" ");
-    const tokens = query.split(/\s+/).filter(Boolean).map((t) => t.toLowerCase());
-    if (!haystack || !tokens.length) return escapeHtml((item.excerpt || "").slice(0, 120));
-    const lower = haystack.toLowerCase();
-    let pos = -1;
-    for (const t of tokens) {
-        const p = lower.indexOf(t);
-        if (p >= 0 && (pos < 0 || p < pos)) pos = p;
-    }
-    if (pos < 0) return escapeHtml(haystack.slice(0, 120));
-    const start = Math.max(0, pos - 30);
-    const end = Math.min(haystack.length, pos + 100);
-    let frag = haystack.slice(start, end);
-    if (start > 0) frag = "…" + frag;
-    if (end < haystack.length) frag += "…";
-    let html = escapeHtml(frag);
-    for (const t of tokens) {
-        const re = new RegExp(escapeRegex(t), "gi");
-        html = html.replace(re, (m) => `<mark>${m}</mark>`);
-    }
-    return html;
-}
-
-async function ensureSearchLoaded() {
-    if (state.miniSearch) return state.miniSearch;
-    if (state.searchLoading) return state.searchLoading;
-    state.searchLoading = (async () => {
-        const [{ default: MiniSearch }, raw] = await Promise.all([
-            import("./vendor/minisearch.esm.js"),
-            fetch("data/search.json", { cache: "default" }).then((r) => {
-                if (!r.ok) throw new Error(`search.json HTTP ${r.status}`);
-                return r.json();
-            }),
-        ]);
-        state.miniSearch = MiniSearch.loadJS(raw, {
-            idField: "id",
-            fields: ["title", "sections", "body"],
-            storeFields: ["id", "title", "type", "date"],
-            tokenize: tokenizeCJK,
-            searchOptions: {
-                prefix: true,
-                fuzzy: 0.15,
-                boost: { title: 3, sections: 2 },
-                combineWith: "AND",
-            },
-        });
-        return state.miniSearch;
-    })().catch((err) => {
-        console.error("search load failed", err);
-        state.searchLoading = null;
-        throw err;
+    update([], "正在搜索…");
+    const result = await search("page", query, undefined, (preview) => {
+        update(preview.results, `标题和栏目匹配 ${preview.total} 条，正在搜索全文…`);
     });
-    return state.searchLoading;
+    update(result.results, resultMessage(result));
 }
 
-async function search(query) {
-    try {
-        const ms = await ensureSearchLoaded();
-        return ms.search(query).slice(0, 30);
-    } catch {
-        return fallbackSearch(query);
-    }
-}
-
-function fallbackSearch(query) {
-    const q = query.toLowerCase();
-    const tokens = q.split(/\s+/).filter(Boolean);
-    if (!tokens.length) return [];
-    return state.index.items
-        .map((it) => {
-            const hay = `${it.title}\n${it.excerpt || ""}\n${(it.sections || []).map((s) => s.heading || "").join("\n")}`.toLowerCase();
-            const score = tokens.reduce((s, t) => s + (hay.includes(t) ? 1 : 0), 0);
-            return { id: it.id, score };
-        })
-        .filter((r) => r.score > 0)
-        .sort((a, b) => b.score - a.score)
-        .slice(0, 30);
-}
-
-function installShortcuts() {
-    document.addEventListener("keydown", (e) => {
-        if (e.key === "/" && !isTypingTarget(e.target)) {
-            e.preventDefault();
-            SEARCH_INPUT.focus();
-            SEARCH_INPUT.select();
-        }
-    });
-}
-
-/* =====================================================================
- * Helpers
- * ===================================================================== */
-function reportShortTitle(it) {
-    const t = it.title || "";
-    return t.replace(/^老司机[^#]*#\d+\s*\|?\s*/, "").trim() || t;
-}
-
-function typeLabel(type) {
-    return { report: "周报", post: "文章", contributor: "贡献者" }[type] || type;
-}
-
-function backHref(item) {
-    return { report: "#/reports", post: "#/posts", contributor: "#/contributors" }[item.type] || "#/";
-}
-
-function encodePath(p) {
-    return p.split("/").map((s) => encodeURIComponent(s)).join("/");
-}
-
-function applyExternalLinks(root) {
-    root.querySelectorAll("a[href]").forEach((a) => {
-        const href = a.getAttribute("href") || "";
-        if (/^https?:\/\//i.test(href)) {
-            a.target = "_blank";
-            a.rel = "noopener noreferrer";
-        }
-    });
-}
-
-function applyInternalAnchors(root) {
-    /* Collapse first H1 in body since we already show the title in meta? Keep H1 for visual continuity. */
-    root.querySelectorAll("img[src]").forEach((img) => {
-        img.loading = "lazy";
-        img.referrerPolicy = "no-referrer";
-    });
-}
-
-function debounce(fn, ms) {
-    let t;
-    return function (...args) {
-        clearTimeout(t);
-        t = setTimeout(() => fn.apply(this, args), ms);
-    };
-}
-
-function isTypingTarget(t) {
-    if (!t) return false;
-    const tag = t.tagName;
-    return tag === "INPUT" || tag === "TEXTAREA" || t.isContentEditable;
-}
-
-function escapeHtml(s) {
-    return String(s ?? "")
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#39;");
-}
-function escapeAttr(s) { return escapeHtml(s); }
-function escapeRegex(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+if (form && panel && status && more) installQuickSearch();
+showSearchPage();
