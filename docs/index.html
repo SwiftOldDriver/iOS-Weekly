@@ -3,70 +3,74 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#ffb11b" />
-    <meta name="description" content="老司机 iOS 周报：iOS 开发者的精品资讯、文章与工具，可在线检索全部往期内容。" />
-    <title>老司机 iOS 周报</title>
-
-    <link rel="icon" href="assets/ios-weekly-avatar-new.png" />
-    <link rel="preload" as="fetch" href="data/index.json" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="assets/page.css" />
-    <link rel="stylesheet" href="site.css" />
+    <meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#15171d" media="(prefers-color-scheme: dark)" />
+    <meta name="description" content="{{DESCRIPTION}}" />
+    <title>{{TITLE}}</title>
+    {{PAGE_META}}
+    <link rel="icon" href="{{ROOT}}assets/ios-weekly-avatar-new.png" />
+    <link rel="alternate" type="application/atom+xml" title="老司机 iOS 周报" href="https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom" />
+    {{ARTICLE_CSS}}
+    <link rel="stylesheet" href="{{ROOT}}site.css" />
 </head>
-<body>
+<body data-page="{{PAGE}}">
     <a class="app-skip-link" href="#main">跳到主要内容</a>
-
-    <header class="app-header" role="banner">
+    <header class="app-header">
         <div class="app-header__inner">
-            <a class="app-brand" href="#/" aria-label="老司机 iOS 周报 首页">
-                <img src="assets/ios-weekly-avatar-new.png" alt="" width="36" height="36" />
+            <a class="app-brand" href="{{ROOT}}" aria-label="老司机 iOS 周报首页">
+                <img src="{{ROOT}}assets/ios-weekly-avatar-new.png" alt="" width="32" height="32" />
                 <span class="app-brand__name">老司机 iOS 周报</span>
             </a>
-
             <nav class="app-nav" aria-label="主导航">
-                <a href="#/reports" data-route="/reports">Reports</a>
-                <a href="#/posts" data-route="/posts">Posts</a>
-                <a href="#/contributors" data-route="/contributors">Contributors</a>
-                <a class="app-nav__external" href="https://github.com/SwiftOldDriver/iOS-Weekly" target="_blank" rel="noopener">GitHub</a>
+                {{NAVIGATION}}
             </nav>
-
-            <div class="app-search" role="search">
-                <label class="app-search__label" for="app-search-input">
+            <form class="app-search" role="search" action="{{ROOT}}search/" method="get">
+                <div class="app-search__label">
                     <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
                         <path fill="currentColor" d="M10 4a6 6 0 1 0 3.86 10.55l4.79 4.8 1.42-1.42-4.8-4.79A6 6 0 0 0 10 4Zm0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"/>
                     </svg>
                     <input
                         id="app-search-input"
+                        name="q"
                         type="search"
-                        autocomplete="off"
-                        spellcheck="false"
-                        placeholder="搜索周报、文章、贡献者…"
+                        role="combobox"
+                        aria-label="搜索周报、文章和贡献者"
+                        aria-autocomplete="list"
                         aria-controls="app-search-panel"
-                        aria-expanded="false" />
+                        aria-expanded="false"
+                        autocomplete="off"
+                        enterkeyhint="search"
+                        spellcheck="false"
+                        placeholder="搜索周报、文章…" />
                     <kbd class="app-search__kbd" aria-hidden="true">/</kbd>
-                </label>
-                <div id="app-search-panel" class="app-search__panel" role="listbox" hidden></div>
-            </div>
+                    <button class="app-search__submit" type="submit">搜索</button>
+                </div>
+                <div class="app-search__popup">
+                    <div id="app-search-panel" class="app-search__panel" role="listbox" aria-label="搜索建议" hidden></div>
+                    <div id="app-search-more" class="app-search__more" hidden></div>
+                </div>
+                <p id="app-search-status" class="app-sr-only" role="status"></p>
+            </form>
         </div>
     </header>
 
     <main id="main" class="app-main" tabindex="-1">
-        <div id="app-view" class="app-view">
-            <div class="app-loading" aria-live="polite">载入中…</div>
-        </div>
+        {{CONTENT}}
     </main>
 
     <footer class="app-footer">
         <div class="app-footer__inner">
-            <p>
-                内容由
-                <a href="https://github.com/SwiftOldDriver/iOS-Weekly" target="_blank" rel="noopener">SwiftOldDriver/iOS-Weekly</a>
-                提供，本站点为社区检索版。
-            </p>
-            <p class="app-footer__meta">遵循 <a href="https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/LICENSE" target="_blank" rel="noopener">原仓库 License</a></p>
+            <p>老司机 iOS 周报 · 由社区编辑与维护</p>
+            <nav aria-label="周报资源">
+                <a href="https://github.com/SwiftOldDriver/iOS-Weekly/releases.atom">RSS 订阅</a>
+                <a href="https://github.com/SwiftOldDriver/iOS-Weekly/issues/new/choose">投稿与反馈</a>
+                <a href="https://github.com/SwiftOldDriver/iOS-Weekly">GitHub</a>
+                <a href="https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/LICENSE">许可协议</a>
+            </nav>
         </div>
     </footer>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="{{ROOT}}app.js"></script>
+    {{NAVIGATION_SCRIPT}}
 </body>
 </html>
