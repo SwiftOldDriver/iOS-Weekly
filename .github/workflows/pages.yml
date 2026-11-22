@@ -11,6 +11,15 @@ on:
       - "docs/**"
       - "scripts/**"
       - ".github/workflows/pages.yml"
+  pull_request:
+    paths:
+      - "Reports/**"
+      - "Posts/**"
+      - "Contributors/**"
+      - "assets/**"
+      - "docs/**"
+      - "scripts/**"
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
     inputs:
       runner:
@@ -23,11 +32,9 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: ${{ github.event_name == 'pull_request' && format('pages-pr-{0}', github.event.pull_request.number) || 'pages' }}
   cancel-in-progress: false
 
 jobs:
@@ -36,7 +43,8 @@ jobs:
     # 手动 workflow_dispatch 时可在 inputs.runner 选择 ubuntu-latest 作为兜底。
     # 注意：runs-on 匹配的是 runner 的 label 而非 name；这里只用 "self-hosted"
     # 通用 label 命中我们挂载到本仓库的 self-hosted runner。
-    runs-on: ${{ inputs.runner == 'ubuntu-latest' && 'ubuntu-latest' || 'self-hosted' }}
+    # Run unmerged pull request code on an isolated GitHub-hosted runner.
+    runs-on: ${{ (github.event_name == 'pull_request' || inputs.runner == 'ubuntu-latest') && 'ubuntu-latest' || 'self-hosted' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -58,6 +66,13 @@ jobs:
           fi
           gtar --version | head -n 1
 
+      - name: Install WebP encoder (Ubuntu)
+        if: runner.environment == 'github-hosted'
+        run: sudo apt-get update && sudo apt-get install -y webp
+
+      - name: Check WebP encoder
+        run: cwebp -version
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -70,29 +85,24 @@ jobs:
       - name: Install build deps
         run: npm ci --prefix scripts
 
-      - name: Build search & metadata index
-        run: node scripts/build-index.js
+      - name: Build static site
+        run: npm run build --prefix scripts
 
-      - name: Assemble _site
-        run: |
-          set -euo pipefail
-          rm -rf _site
-          mkdir -p _site
-          cp -R docs/. _site/
-          cp -R assets _site/assets
-          cp -R Reports Posts Contributors _site/
-          touch _site/.nojekyll
-          # do not ship raw npm install metadata
-          rm -rf _site/data/.git || true
-          ls -la _site | head -40
+      - name: Verify generated pages and search
+        run: npm test --prefix scripts
 
       - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
+    permissions:
+      pages: write
+      id-token: write
     runs-on: ${{ inputs.runner == 'ubuntu-latest' && 'ubuntu-latest' || 'self-hosted' }}
     environment:
       name: github-pages

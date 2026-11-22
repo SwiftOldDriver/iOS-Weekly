@@ -1,5 +1,7 @@
 # 老司机 iOS 周报 #319 | 2026-01-06
 
+<!-- site: draft -->
+
 ![ios-weekly](https://github.com/SwiftOldDriver/iOS-Weekly/blob/master/assets/weekly-header/302.jpg?raw=true)
 老司机 iOS 周报，只为你呈现有价值的信息。
 
